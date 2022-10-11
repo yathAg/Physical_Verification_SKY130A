@@ -6,7 +6,7 @@
 
 ## Chapter 0 - Getting the tools
 
-To adequetly utilize the opensourse skywater130 pdk and understand the design flow we first require to install all the tools, which are
+To adequetly utilize the open source skywater130 pdk and understand the design flow we first require to install all the tools, which are
 - open_pdk
 - magic
 - ngspice
@@ -29,8 +29,8 @@ $  sudo make install
 More info can be found at: [http://opencircuitdesign.com/magic/index.html](http://opencircuitdesign.com/magic/index.html)
 
 ### Netgen
-Netgen is a tool for comparing netlists, a process known as LVS, which stands for "Layout vs. Schematic" <br />
-Install steps
+Netgen is a tool for comparing netlists, a process known as LVS, which stands for "Layout vs. Schematic" <br /><br />
+Install steps:
 ```
 $  git clone git://opencircuitdesign.com/netgen
 $  cd netgen
@@ -41,8 +41,8 @@ $  sudo make install
 More info can be found at: [http://opencircuitdesign.com/netgen/index.html](http://opencircuitdesign.com/netgen/index.html)
 
 ### Xschem
-Xschem is a schematic capture program <br />
-Install steps
+Xschem is a schematic capture program <br /><br />
+Install steps:
 ```
 $  git clone https://github.com/StefanSchippers/xschem.git xschem_git
 $	./configure
@@ -52,7 +52,7 @@ $  sudo make install
 More info can be found at: [http://repo.hu/projects/xschem/index.html](http://repo.hu/projects/xschem/index.html)
 
 ### Ngspice
-ngspice is the open source spice simulator for electric and electronic circuits.<br />
+ngspice is the open source spice simulator for electric and electronic circuits.<br /><br />
 Install steps:<br />
 
 After downloading the tar ball from [https://sourceforge.net/projects/ngspice/files/](https://sourceforge.net/projects/ngspice/files/) to a local directory unpack it using:
@@ -75,8 +75,8 @@ $ sudo apt-get install xterm
 
 ### open_pdk
 
-Open_PDKs is distributed with files that support the Google/SkyWater sky130 open process description [https://github.com/google/skywater-pdk](https://github.com/google/skywater-pdk). Open_PDKs will set up an environment for using the SkyWater sky130 process with open-source EDA tools and tool flows such as magic, qflow, openlane, netgen, klayout, etc.
-Install steps
+Open_PDKs is distributed with files that support the Google/SkyWater sky130 open process description [https://github.com/google/skywater-pdk](https://github.com/google/skywater-pdk). Open_PDKs will set up an environment for using the SkyWater sky130 process with open-source EDA tools and tool flows such as magic, qflow, openlane, netgen, klayout, etc.<br /><br />
+Install steps:
 ```
 $  git clone git://opencircuitdesign.com/open_pdks
 $  open_pdks
@@ -88,6 +88,16 @@ $  sudo make install
 Now that we have all the required tools installed lets get started with understanding the design flow!
 ## Chapter 1 - Understanding the design flow
 
+### Verifiying the open_pdk installation
+
+### Creating inverter schematic using xschem
+
+### Creating and simulating testbench Schematic
+
+### Creating inverter layout in Magic and exporting its netlist
+
+### Performing LVS checks on testbench and layout netlists
+
 ## Chapter 2 - DRC and LVS
 
 ### Design Rule Checking (DRC)
@@ -97,3 +107,9 @@ Make sure design layout meets all silicon foundry rules for masks.
 Make sure design layout matches a simulatable netlist by electrical connectivity and devices.
 
 ![LVS](Resources/Lab2/LVS.png)
+
+### GDSII file format
+
+### Reading GDS files
+
+### Matching ports to spice netlists
