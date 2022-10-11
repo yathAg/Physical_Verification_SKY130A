@@ -67,8 +67,25 @@ After downloading the tar ball from [https://sourceforge.net/projects/ngspice/fi
 ```
 More info can be found at: [https://ngspice.sourceforge.io/index.html](https://ngspice.sourceforge.io/index.html)
 
+Please note that to view the simulation graphs of ngspice, xterm is required and can be installed using
+```
+$ sudo apt-get update
+$ sudo apt-get install xterm
+```
+
 ### open_pdk
 
+Open_PDKs is distributed with files that support the Google/SkyWater sky130 open process description [https://github.com/google/skywater-pdk](https://github.com/google/skywater-pdk). Open_PDKs will set up an environment for using the SkyWater sky130 process with open-source EDA tools and tool flows such as magic, qflow, openlane, netgen, klayout, etc.
+Install steps
+```
+$  git clone git://opencircuitdesign.com/open_pdks
+$  open_pdks
+$	./configure --enable-sky130-pdk
+$  make
+$  sudo make install
+```
+
+Now that we have all the required tools installed lets get started with understanding the design flow!
 ## Chapter 1 - Understanding the design flow
 
 ## Chapter 2 - DRC and LVS
