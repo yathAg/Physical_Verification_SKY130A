@@ -247,3 +247,11 @@ netgen -batch lvs "../mag/sky130_fd_sc_hd__and2_1.spice sky130_fd_sc_hd__and2_1"
 % flatten -nolabels xor_test
 % xor -nolables xor_test
 % load xor_test
+
+
+## Chapter 3 - DRC Issues
+
+![ex_1a](Resources/Lab3/ex_1a.png)
+![ex_1b](Resources/Lab3/ex_1b.png)
+![ex_1c](Resources/Lab3/ex_1c.png)
+![ex_1d](Resources/Lab3/ex_1d.png)
