@@ -113,14 +113,21 @@ Make sure design layout matches a simulatable netlist by electrical connectivity
 ### Reading GDS files
 
 ```
-% cif list istyle
-% gds read /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+$ cp /usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc ./.madicrc
 ```
+
+```
+% gds read /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+% load sky130_fd_sc_hd__and2_1
+```
+![load_cell](Resources/Lab2/load_cell.png)
 
 ```
 % cif istyle sky130(vendor)
 % gds read /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
 ```
+
+![change_istyle](Resources/Lab2/change_istyle.png)
 
 ```
 % gds noduplicates true
@@ -135,48 +142,59 @@ Make sure design layout matches a simulatable netlist by electrical connectivity
 % port 1 class
 % port 1 use
 ```
+![no_metadata](Resources/Lab2/no_metadata.png)
+
 ```
 % lef read /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
 ```
+![lef_metadata](Resources/Lab2/lef_metadata.png)
+
 ```
 % readspice /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+% load sky130_fd_sc_hd__and2_1
 ```
+![spice_metadata](Resources/Lab2/spice_metadata.png)
+
 
 ### Abstract views
 
 ```
 % lef read /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+% load sky130_fd_sc_hd__and2_1
 % readspice /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
-load test
-get cell sky130_fd_sc_hd__and2_1
-gds write test     
+% load test
+% getcell sky130_fd_sc_hd__and2_1
+% gds write test     
 ```
+![abstract_view](Resources/Lab2/abstract_view.png)
+
+
+Restart magic to get broken thing
 ```
 %gds read test
 %save test
 ```
-```
-%load test
-%gds write test
-```
-%property
+![failed_load](Resources/Lab2/failed_load.png)
 
+When test is reloaded after saving we get the original layout
 ```
-% cellname writeable sky130_fd_sc_hd__and2_1 true
-```
-edit cell
-```
+% load test
 % gds write test
 ```
+We can edit the cell by making it editable
+```
+% property
+% cellname writeable sky130_fd_sc_hd__and2_1 true
+% gds write test
+```
+![editing](Resources/Lab2/editing.png)
+
+and after restarting magic and reloading it we still get an unchanged cell
 ```
 % gds read test
 ```
+![reload](Resources/Lab2/reload.png)
 
-% gds readonly true
-% gds rescale false
-% gds read /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds  
-% load sky130_fd_sc_hd__and2_1
-% property
 
 
 ### Extraction
@@ -185,12 +203,12 @@ edit cell
 % ext2spice lvs
 % ext2spice
 ```
-
+![spice](Resources/Lab2/spice.png)
 ```
 % ext2spice cthresh 0.01
 % ext2spice
 ```
-! select cell
+![spice_c](Resources/Lab2/spice_c.png)
 
 ```
 % ext2sim labels on
@@ -204,6 +222,8 @@ edit cell
 % ext2spice extresist on
 % ext2spice
 ```
+![spice_rc](Resources/Lab2/spice_rc.png)
+
 
 ### DRC
 
