@@ -206,3 +206,24 @@ edit cell
 ```
 
 ### DRC
+
+/usr/local/share/pdk/sky130A/libs.tech/magic/run_standard_drc.py /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag/sky130_fd_sc_hd__and2_1.mag
+
+% drc style drc(full)
+% drc check
+% drc why
+% drc find
+
+% getcell sky130_fd_sc_hd__tapvpwrvgnd_1
+
+### LVS
+
+cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl ./setup.tcl
+
+netgen -batch lvs "../mag/sky130_fd_sc_hd__and2_1.spice sky130_fd_sc_hd__and2_1" "/usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice sky130_fd_sc_hd__and2_1"
+
+### XOR
+
+% flatten -nolabels xor_test
+% xor -nolables xor_test
+% load xor_test
