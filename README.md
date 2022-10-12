@@ -113,7 +113,7 @@ Make sure design layout matches a simulatable netlist by electrical connectivity
 ### Reading GDS files
 
 ```
-$ cp /usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc ./.madicrc
+$ cp /usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc ./.magicrc
 ```
 
 ```
