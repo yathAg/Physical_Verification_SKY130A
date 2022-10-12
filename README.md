@@ -250,8 +250,14 @@ netgen -batch lvs "../mag/sky130_fd_sc_hd__and2_1.spice sky130_fd_sc_hd__and2_1"
 
 
 ## Chapter 3 - DRC Issues
-
-![ex_1a](Resources/Lab3/ex_1a.png)
-![ex_1b](Resources/Lab3/ex_1b.png)
-![ex_1c](Resources/Lab3/ex_1c.png)
-![ex_1d](Resources/Lab3/ex_1d.png)
+Usefull Magic commands
+- b
+- s
+- ?
+- : box width 0.14um
+- : stret u 0.14um
+- : move e o.14um
+![ex_1a](Resources/Lab3/ex_1a.png)<br />
+![ex_1b](Resources/Lab3/ex_1b.png)<br />
+![ex_1c](Resources/Lab3/ex_1c.png)<br />
+![ex_1d](Resources/Lab3/ex_1d.png)<br />
