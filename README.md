@@ -144,7 +144,65 @@ Make sure design layout matches a simulatable netlist by electrical connectivity
 
 ### Abstract views
 
+```
+% lef read /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+% readspice /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+load test
+get cell sky130_fd_sc_hd__and2_1
+gds write test     
+```
+```
+%gds read test
+%save test
+```
+```
+%load test
+%gds write test
+```
+%property
+
+```
+% cellname writeable sky130_fd_sc_hd__and2_1 true
+```
+edit cell
+```
+% gds write test
+```
+```
+% gds read test
+```
+
+% gds readonly true
+% gds rescale false
+% gds read /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds  
+% load sky130_fd_sc_hd__and2_1
+% property
+
 
 ### Extraction
+```
+% extract all
+% ext2spice lvs
+% ext2spice
+```
+
+```
+% ext2spice cthresh 0.01
+% ext2spice
+```
+! select cell
+
+```
+% ext2sim labels on
+% ext2sim
+
+% extresist tolerance 10
+% extresist
+
+% ext2spice lvs
+% ext2spice cthresh 0.01
+% ext2spice extresist on
+% ext2spice
+```
 
 ### DRC

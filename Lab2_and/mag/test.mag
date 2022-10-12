@@ -1,0 +1,8 @@
+magic
+tech sky130A
+timestamp 1665551737
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_0
+timestamp 0
+transform 1 0 -7 0 1 4
+box -19 -24 249 296
+<< end >>
