@@ -112,4 +112,39 @@ Make sure design layout matches a simulatable netlist by electrical connectivity
 
 ### Reading GDS files
 
+```
+% cif list istyle
+% gds read /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+```
+
+```
+% cif istyle sky130(vendor)
+% gds read /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+```
+
+```
+% gds noduplicates true
+```
+
+
 ### Matching ports to spice netlists
+
+```
+% port first
+% port 1 name
+% port 1 class
+% port 1 use
+```
+```
+% lef read /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+```
+```
+% readspice /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+```
+
+### Abstract views
+
+
+### Extraction
+
+### DRC
