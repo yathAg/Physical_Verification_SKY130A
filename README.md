@@ -303,4 +303,57 @@ Usefull Magic commands
 
 ## Chapter 4 - LVS
 
-## Additional Content - OpenLane Design Flow
+## Additional Content - OpenLANE Design Flow
+
+OpenLANE is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, Fault, OpenPhySyn, CVC, SPEF-Extractor and custom methodology scripts for design exploration and optimization. The flow performs full ASIC implementation steps from RTL all the way down to GDSII.
+
+### Design Flow
+![flow.ong](Resources/OpenLane/flow.png)
+
+1. **Synthesis**
+    1. `yosys/abc` - Perform RTL synthesis and technology mapping.
+    2. `OpenSTA` - Performs static timing analysis on the resulting netlist to generate timing reports
+2. **Floorplaning**
+    1. `init_fp` - Defines the core area for the macro as well as the rows (used for placement) and the tracks (used for routing)
+    2. `ioplacer` - Places the macro input and output ports
+    3. `pdngen` - Generates the power distribution network
+    4. `tapcell` - Inserts welltap and decap cells in the floorplan
+3. **Placement**
+    1. `RePLace` - Performs global placement
+    2. `Resizer` - Performs optional optimizations on the design
+    3. `OpenDP` - Perfroms detailed placement to legalize the globally placed components
+4. **CTS**
+    1. `TritonCTS` - Synthesizes the clock distribution network (the clock tree)
+5. **Routing**
+    1. `FastRoute` - Performs global routing to generate a guide file for the detailed router
+    2. `TritonRoute` - Performs detailed routing
+    3. `OpenRCX` - Performs SPEF extraction
+6. **Tapeout**
+    1. `Magic` - Streams out the final GDSII layout file from the routed def
+    2. `KLayout` - Streams out the final GDSII layout file from the routed def as a back-up
+7. **Signoff**
+    1. `Magic` - Performs DRC Checks & Antenna Checks
+    2. `KLayout` - Performs DRC Checks
+    3. `Netgen` - Performs LVS Checks
+    4. `CVC` - Performs Circuit Validity Checks
+
+All the information about the project can be found in the openlANE documentation:
+[https://openlane.readthedocs.io/en/latest/index.html](https://openlane.readthedocs.io/en/latest/index.html)
+
+### confic.tcl
+
+this file is nessecary for running the openLANE flow and its documentation can be found at:
+[https://openlane.readthedocs.io/en/latest/reference/configuration.html](https://openlane.readthedocs.io/en/latest/reference/configuration.html)
+
+### Example - openLANE without interactive run
+run the following in the openLANE deirectory
+
+```
+export PDK_ROOT=/usr/local/share/pdk
+make mount
+./flow.tcl -design spm -tag run1
+```
+
+This runs the entire openLANE flow and generates the required GDSII and .mag files which can be viewed in magic
+
+### Example - openLANE with interactive run
