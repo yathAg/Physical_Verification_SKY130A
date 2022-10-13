@@ -158,6 +158,12 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc ./.magicrc
 
 ### Abstract views
 
+Note: difference between load and getcell
+
+The difference is between a cell and an instance of that cell.
+If you do load inverter, then you will be editing the cell called inverter.
+If you do getcell inverter, then you will place an instance of the cell inverter inside the cell you're currently editing.
+
 ```
 % lef read /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
 % load sky130_fd_sc_hd__and2_1
@@ -257,7 +263,12 @@ Usefull Magic commands
 - : box width 0.14um
 - : stret u 0.14um
 - : move e o.14um
+
+width_rule
 ![ex_1a](Resources/Lab3/ex_1a.png)<br />
+spaceing_rule
 ![ex_1b](Resources/Lab3/ex_1b.png)<br />
+wide_spacing_rule
 ![ex_1c](Resources/Lab3/ex_1c.png)<br />
+notch_rule
 ![ex_1d](Resources/Lab3/ex_1d.png)<br />
