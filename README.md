@@ -262,13 +262,45 @@ Usefull Magic commands
 - ?
 - : box width 0.14um
 - : stret u 0.14um
-- : move e o.14um
+- : move e 0.14um
+- : box grow c 0.01um
+- : paint m1
 
-width_rule
-![ex_1a](Resources/Lab3/ex_1a.png)<br />
-spaceing_rule
-![ex_1b](Resources/Lab3/ex_1b.png)<br />
-wide_spacing_rule
-![ex_1c](Resources/Lab3/ex_1c.png)<br />
-notch_rule
-![ex_1d](Resources/Lab3/ex_1d.png)<br />
+### width_rule
+![ex_1a](Resources/Lab3/ex_1a.png)
+### spaceing_rule
+![ex_1b](Resources/Lab3/ex_1b.png)
+### wide_spacing_rule
+![ex_1c](Resources/Lab3/ex_1c.png)
+### notch_rule
+![ex_1d](Resources/Lab3/ex_1d.png)
+### via_size
+![ex_2a](Resources/Lab3/ex_2a.png)
+### multiple_vias
+![ex_2b](Resources/Lab3/ex_2b.png)
+### via_overlap
+![ex_2c](Resources/Lab3/ex_2c.png)
+### auto_generate_via
+![ex_2d](Resources/Lab3/ex_2d.png)
+### minimum_area_rule
+![ex_3a](Resources/Lab3/ex_3a.png)
+### minimum_hole_rule
+![ex_3b](Resources/Lab3/ex_3b.png)
+### wells
+![ex_4a](Resources/Lab3/ex_4a.png)
+### deep_nwell
+![ex_4c_1](Resources/Lab3/ex_4c_1.png)
+### automatic_deep_nwell
+![ex_4c_2](Resources/Lab3/ex_4c_2.png)
+### derived_layers
+![ex_5a](Resources/Lab3/ex_5a.png)
+### derived_layer_high_voltage
+![ex_5b](Resources/Lab3/ex_5b.png)
+### derived_layers_automatic_layers
+![ex_5c](Resources/Lab3/ex_5c.png)
+
+
+
+## Chapter 4 - LVS
+
+## Additional Content - OpenLane Design Flow
