@@ -340,14 +340,13 @@ OpenLANE is an automated RTL to GDSII flow based on several components including
 All the information about the project can be found in the openlANE documentation:
 [https://openlane.readthedocs.io/en/latest/index.html](https://openlane.readthedocs.io/en/latest/index.html)
 
-### confic.tcl
+### config.tcl
 
 this file is nessecary for running the openLANE flow and its documentation can be found at:
 [https://openlane.readthedocs.io/en/latest/reference/configuration.html](https://openlane.readthedocs.io/en/latest/reference/configuration.html)
 
 ### Example - openLANE without interactive run
 run the following in the openLANE deirectory
-
 ```
 export PDK_ROOT=/usr/local/share/pdk
 make mount
@@ -357,3 +356,79 @@ make mount
 This runs the entire openLANE flow and generates the required GDSII and .mag files which can be viewed in magic
 
 ### Example - openLANE with interactive run
+
+The interactive flow allows to run each step of the design flow. It can be launched using
+```
+export PDK_ROOT=/usr/local/share/pdk
+make mount
+./flow.tcl -interactive
+```
+Start the Design flow  and synthesis with the following
+```
+package require openlane
+prep -design spm -tag run1
+run_synthesis
+```
+Run the Floorplaning using
+```
+run_floorplan
+```
+Run the placement using
+```
+run_placement
+```
+Run the clock tree generation and STA using
+```
+run_cts
+```
+The clock tree can be optimized using
+```
+run_resizer_timing
+```
+Run the routing using
+```
+run_routing
+```
+After all the changes that have taken place a new verilog file can be obtained using
+```
+write_powered_verilog
+set_netlist $::env(lvs_result_file_tag).powered.v
+```
+Generate GDSII file using
+```
+run_magic
+```
+An alternate GDSII file is generated using klayout for XOR verification
+```
+run_klayout
+```
+Run the XOR test using
+```
+run_klayout_gds_xor
+```
+Export spice netlist using
+```
+run_magic_spice_export
+```
+Run LVS on exported spice netlist and verilog file
+```
+run_lvs
+```
+DRC checks
+```
+run_magic_drc
+```
+Antenna Checks
+```
+run_antenna_check
+```
+LEF checks
+DRC_checks
+```
+run_lef_cvc
+```
+Final summary report can be generated using
+DRC_checks
+```
+generate_final_summary_report
+```
