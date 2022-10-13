@@ -432,3 +432,8 @@ DRC_checks
 ```
 generate_final_summary_report
 ```
+### Example - Technique to prevant DRC errors
+- **Local Interconnect rules**  : Avoid routing large traces on the local interconnect
+- **Density Planning** : The utilization ratio can be reduced to form more spaced circuits with lesser errors The FP_CORE_UTIL variable in the .config file
+- **Dont use cells** : Avoid using cells that are known to cause errors
+- **Manual verification** : For designs with lower number of DRC errors, the can be corrected with the methods disscused in chapter 3
