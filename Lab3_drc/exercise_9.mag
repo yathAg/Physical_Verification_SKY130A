@@ -1,0 +1,35 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1624218969
+<< error_s >>
+rect -675 -978 965 -657
+rect -610 -1192 -554 -1062
+rect -524 -1192 -470 -1062
+rect -440 -1192 -386 -1062
+rect -356 -1192 -302 -1062
+rect -272 -1192 -220 -1062
+rect -150 -1192 -98 -1062
+rect -68 -1192 -14 -1062
+rect 16 -1192 70 -1062
+rect 100 -1192 154 -1062
+rect 184 -1192 238 -1062
+rect 268 -1192 322 -1062
+rect 352 -1192 406 -1062
+rect 436 -1192 490 -1062
+rect 520 -1192 574 -1062
+rect 604 -1192 658 -1062
+rect 688 -1192 742 -1062
+rect 772 -1192 824 -1062
+use sky130_fd_sc_hd__buf_8  sky130_fd_sc_hd__buf_8_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1620506760
+transform 1 0 -177 0 1 -1239
+box -38 -48 1142 592
+use sky130_fd_sc_hd__nor2_2  sky130_fd_sc_hd__nor2_2_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1620506760
+transform 1 0 -637 0 1 -1239
+box -38 -48 498 592
+<< labels >>
+flabel space 88 -427 88 -427 0 FreeSans 320 0 0 0 Exercise_9a
+flabel space 99 -494 99 -494 0 FreeSans 320 0 0 0 Latchup_rules
+<< end >>

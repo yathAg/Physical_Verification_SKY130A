@@ -1,0 +1,39 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1665644124
+<< locali >>
+rect -302 629 -161 663
+rect -302 462 -268 629
+<< viali >>
+rect -161 629 -127 663
+<< metal1 >>
+rect -182 672 -106 684
+rect -182 620 -170 672
+rect -118 620 -106 672
+rect -182 608 -106 620
+rect 882 640 1192 698
+rect 882 500 968 640
+rect 1110 500 1192 640
+rect 882 442 1192 500
+<< via1 >>
+rect -170 663 -118 672
+rect -170 629 -161 663
+rect -161 629 -127 663
+rect -127 629 -118 663
+rect -170 620 -118 629
+<< metal2 >>
+rect -178 672 -110 680
+rect -178 620 -170 672
+rect -118 620 -110 672
+rect -178 612 -110 620
+rect -161 457 -127 612
+<< metal4 >>
+rect 10 584 108 688
+<< labels >>
+flabel space 70 912 70 912 0 FreeSans 320 0 0 0 Exercise_3a
+flabel space 64 828 64 828 0 FreeSans 320 0 0 0 Minimum_area_rule
+flabel space 1042 944 1042 944 0 FreeSans 320 0 0 0 Exercise_3b
+flabel space 1018 844 1018 844 0 FreeSans 320 0 0 0 Minimum_hole_rule
+flabel space 1000 334 1000 334 0 FreeSans 320 0 0 0 *must_use_drc_style_sky130(full)*
+<< end >>

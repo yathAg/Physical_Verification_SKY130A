@@ -1,0 +1,65 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1624216583
+<< error_s >>
+rect -26 -258 32 -252
+rect -26 -292 -14 -258
+rect -26 -298 32 -292
+rect -26 -452 32 -446
+rect -26 -486 -14 -452
+rect -26 -492 32 -486
+rect 3438 -566 5212 -480
+rect 1653 -702 1666 -692
+rect 1700 -702 1713 -692
+rect 1543 -762 1583 -722
+rect 1653 -732 1713 -702
+rect 1612 -762 1652 -733
+rect 1533 -772 1573 -762
+rect 1583 -773 1652 -762
+rect 1714 -762 1754 -733
+rect 1783 -762 1823 -722
+rect 3352 -760 5212 -566
+rect 1714 -773 1783 -762
+rect 1793 -772 1833 -762
+rect 1513 -872 1553 -832
+rect 1583 -846 1623 -773
+rect 1743 -846 1783 -773
+rect 1813 -872 1853 -832
+rect 1513 -1772 1553 -1732
+rect 1583 -1831 1623 -1758
+rect 1743 -1831 1783 -1758
+rect 1813 -1772 1853 -1732
+rect 1533 -1842 1573 -1832
+rect 1583 -1842 1652 -1831
+rect 1543 -1882 1583 -1842
+rect 1612 -1871 1652 -1842
+rect 1714 -1842 1783 -1831
+rect 1793 -1842 1833 -1832
+rect 1714 -1871 1754 -1842
+rect 1653 -1912 1713 -1872
+rect 1783 -1882 1823 -1842
+rect 3352 -6446 3612 -760
+rect 4132 -1390 4162 -1360
+rect 4402 -1390 4432 -1360
+rect 4952 -6446 5212 -760
+use sky130_fd_pr__esd_rf_nfet_20v0_hbm_21vW60p00  sky130_fd_pr__esd_rf_nfet_20v0_hbm_21vW60p00_0 $PDKPATH/libs.ref/sky130_fd_pr/mag
+timestamp 1620505629
+transform 1 0 4132 0 1 -7360
+box -1234 -1208 1534 7208
+use sky130_fd_io__signal_5_sym_hv_local_5term  sky130_fd_io__signal_5_sym_hv_local_5term_0 $PDKPATH/libs.ref/sky130_fd_io/mag
+timestamp 1620505686
+transform 1 0 888 0 1 -2514
+box 0 0 1591 2424
+use sky130_fd_pr__nfet_01v8_EDB9KC  sky130_fd_pr__nfet_01v8_EDB9KC_0  paramcells
+timestamp 1624216583
+transform 1 0 3 0 1 -372
+box -211 -252 211 252
+<< labels >>
+flabel space -20 42 -20 42 0 FreeSans 320 0 0 0 Exercise_6a
+flabel space -12 -34 -12 -34 0 FreeSans 320 0 0 0 Parameterized_devices
+flabel space 1628 50 1628 50 0 FreeSans 320 0 0 0 Exercise_6b
+flabel space 1632 -34 1632 -34 0 FreeSans 320 0 0 0 PDK_devices
+flabel space 4238 64 4238 64 0 FreeSans 320 0 0 0 Exercise_6c
+flabel space 4220 -6 4220 -6 0 FreeSans 320 0 0 0 PDK_devices
+<< end >>

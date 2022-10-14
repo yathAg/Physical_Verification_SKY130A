@@ -1,0 +1,19 @@
+This git repository contains examples that are used in the laboratory
+exercise for the VSD lectures and labs on physical verification (2021).
+
+Lab 3, Design Rule Checking (DRC)
+
+Contents:
+----------------------
+Exercise 1:  Width, Spacing, Wide spacing, and Notch rules
+Exercise 2:  Minimum area and minimum hole rules
+Exercise 3:  Vias and via rules
+Exercise 4:  Wells and taps
+Exercise 5:  Derived layer rules
+Exercise 6:  Devices and device rules
+Exercise 7:  Off-grid rules, angle rules, overlap rules 
+Exercise 8:  Unimplemented rules:  Seal ring and SRAM
+Exercise 9:  Latchup rules
+Exercise 10: Antenna rules
+Exercise 11: Density rules
+Exercise 12: Do it yourself!

@@ -1,0 +1,41 @@
+magic
+tech sky130A
+timestamp 1624204887
+<< error_p >>
+rect -138 -221 -13 -92
+rect 370 -218 445 -89
+rect 556 -196 586 -108
+rect 780 -182 1152 -39
+rect 780 -261 923 -182
+rect 1009 -261 1152 -182
+rect 780 -404 1152 -261
+<< dnwell >>
+rect 820 -364 1112 -79
+<< nwell >>
+rect -138 -221 -13 -92
+rect 320 -218 445 -89
+<< pwell >>
+rect 22 -217 147 -88
+rect 480 -214 605 -85
+<< psubdiff >>
+rect 556 -196 586 -108
+<< nsubdiff >>
+rect 341 -122 376 -107
+rect 341 -187 349 -122
+rect 369 -187 376 -122
+rect 341 -200 376 -187
+<< nsubdiffcont >>
+rect 349 -187 369 -122
+<< locali >>
+rect 341 -122 376 -107
+rect 341 -187 349 -122
+rect 369 -187 376 -122
+rect 341 -200 376 -187
+<< labels >>
+flabel space -14 4 -14 4 0 FreeSans 160 0 0 0 Exercise_4a
+flabel space -13 -34 -13 -34 0 FreeSans 160 0 0 0 Wells
+flabel space 463 -8 463 -8 0 FreeSans 160 0 0 0 Exercise_4b
+flabel space 460 -42 460 -42 0 FreeSans 160 0 0 0 Wells
+flabel space 968 34 968 34 0 FreeSans 160 0 0 0 Exercise_4c
+flabel space 961 -4 961 -4 0 FreeSans 160 0 0 0 Deep_NWell
+<< end >>

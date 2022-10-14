@@ -1,0 +1,25 @@
+magic
+tech sky130A
+timestamp 1665614105
+<< metal1 >>
+rect 268 2 289 48
+rect 303 2 324 48
+<< metal2 >>
+rect 10 -84 24 69
+<< metal3 >>
+rect -333 -544 -1 -215
+rect 53 -330 89 -250
+<< metal4 >>
+rect 258 -287 369 -206
+rect 283 -326 369 -287
+rect 258 -407 369 -326
+<< labels >>
+flabel space 12 152 12 152 0 FreeSans 160 0 0 0 Exercise_1a
+flabel space 304 148 304 148 0 FreeSans 160 0 0 0 Exercise_1b
+flabel space 8 -122 8 -122 0 FreeSans 160 0 0 0 Exercise_1c
+flabel space 302 -120 302 -120 0 FreeSans 160 0 0 0 Exercise_1d
+flabel space 24 115 24 115 0 FreeSans 160 0 0 0 Width_rule
+flabel space 307 114 307 114 0 FreeSans 160 0 0 0 Spacing_rule
+flabel space 306 -161 306 -161 0 FreeSans 160 0 0 0 Notch_rule
+flabel space -11 -161 -11 -161 0 FreeSans 160 0 0 0 Wide_spacing_rule
+<< end >>
