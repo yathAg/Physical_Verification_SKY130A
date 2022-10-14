@@ -1,8 +1,23 @@
 # Physical_Verification_SKY130A
 
-## About the project
+This repository contains the documantaion containg the work done during a 5 day workshop on physical verification carried out by VSD.
+
+The workshop describes the physical verification process that takes place during an RTL to GDSII flow using Skywater 130nm Technology, including DRC and LVS tests. This helps the participants get ready for the tape out and is particularly helpful for chip fabrication. The workshop assists in locating and fixing violations made during the physical verification stage. 
+
+More information about the workshop can be found [here](https://www.vlsisystemdesign.com/physical-verification-using-sky130/)
+
+A special thanks to Tim, Kunal and Sumanto for creating and helping out during this amazing workshop
+- [R. Timothy Edwards](https://github.com/RTimothyEdwards)
+- [Kunal Ghosh](https://github.com/kunalg123)
+- [VSD-IAT](https://vsdiat.com/)
 
 ## Index
+* [Chapter 0 - Getting the tools](#Chapter 0 - Getting the tools)
+* [Chapter 1 - Understanding the design flow](#Chapter 1 - Understanding the design flow)
+* [Chapter 2 - DRC and LVS Fundamentals](#Chapter 2 - DRC and LVS Fundamentals)
+* [Chapter 3 - DRC Issues](#Chapter 3 - DRC Issues)
+* [Chapter 4 - LVS](#Chapter 4 - LVS)
+* [Additional Content - OpenLANE Design Flow](#Additional Content - OpenLANE Design Flow)
 
 ## Chapter 0 - Getting the tools
 
@@ -91,18 +106,17 @@ Now that we have all the required tools installed lets get started with understa
 ### Verifiying the open_pdk installation
 An initial working directory can be made by copying the required files as follows:
 ```
-mkdir Lab1_and
-cd Lab1_and
-mkdir mag
-mkdir netgen
-mkdir xschem
-cd xschem
-cp /usr/local/share/pdk/sky130A/libs.tech/xschem/xschemrc
-cp /usr/local/share/pdk/sky130A/libs.tech/ngspice/spinit .spiceinit
-cd ../mag
-cp /usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc .magiccrc
-cd ../netgen
-cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl setup.tcl
+$ mkdir Lab1_and
+$ cd Lab1_and
+$ mkdir mag
+$ mkdir netgen
+$ mkdir xschem
+$ cd xschem
+$ cp /usr/local/share/pdk/sky130A/libs.tech/xschem/xschemrc
+$ cp /usr/local/share/pdk/sky130A/libs.tech/ngspice/spinit .spiceinit
+$ cd ../mag
+$ cp /usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc .magiccrc
+$ cd ../netgen
 ```
 ![mag_test](Resources/Lab1/mag_test.png)
 ![xschem_test](Resources/Lab1/xschem_test.png)
@@ -120,7 +134,7 @@ cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl setup.tcl
 ![mag_net](Resources/Lab1/mag_net.png)
 ### Performing LVS checks on testbench and layout netlists
 ```
-netgen -batch lvs "../mag/inverter.spice inverter" "../xschem/inverter.spice inverter"
+$ netgen -batch lvs "../mag/inverter.spice inverter" "../xschem/inverter.spice inverter"
 ```
 ![lvs](Resources/Lab1/lvs.png)
 ## Chapter 2 - DRC and LVS Fundamentals
@@ -151,10 +165,6 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc ./.magicrc
 ```
 
 ![change_istyle](Resources/Lab2/change_istyle.png)
-
-```
-% gds noduplicates true
-```
 
 
 ### Matching ports to spice netlists
@@ -198,7 +208,7 @@ If you do getcell inverter, then you will place an instance of the cell inverter
 ![abstract_view](Resources/Lab2/abstract_view.png)
 
 
-Restart magic to get broken thing
+Restart magic to and the cell fails to be loaded properly because the changes were not saved
 ```
 %gds read test
 %save test
@@ -255,28 +265,39 @@ and after restarting magic and reloading it we still get an unchanged cell
 
 
 ### DRC
-
-/usr/local/share/pdk/sky130A/libs.tech/magic/run_standard_drc.py /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag/sky130_fd_sc_hd__and2_1.mag
-
+```
+$ /usr/local/share/pdk/sky130A/libs.tech/magic/run_standard_drc.py /usr/local/share/pdk sky130A/libs.ref/sky130_fd_sc_hd/mag/sky130_fd_sc_hd__and2_1.mag
+```
+```
+% drc liastall style
 % drc style drc(full)
 % drc check
 % drc why
 % drc find
-
+```
+```
 % getcell sky130_fd_sc_hd__tapvpwrvgnd_1
+```
+![drc](Resources/Lab2/drcc.png)
 
 ### LVS
+![gen_spice](Resources/Lab2/gen_spice.png)
 
-cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl ./setup.tcl
-
+```
 netgen -batch lvs "../mag/sky130_fd_sc_hd__and2_1.spice sky130_fd_sc_hd__and2_1" "/usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice sky130_fd_sc_hd__and2_1"
+```
+![lvs_2](Resources/Lab2/lvs_2.png)
 
 ### XOR
-
+```
 % flatten -nolabels xor_test
+```
+edit the cell
+```
 % xor -nolables xor_test
 % load xor_test
-
+```
+![xor_test](Resources/Lab2/xor_test.png)
 
 ## Chapter 3 - DRC Issues
 
