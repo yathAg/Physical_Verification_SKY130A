@@ -120,21 +120,21 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc .magiccrc
 $ cd ../netgen
 ```
 Checking if magic works
-![mag_test](Resources/Lab1/mag_test.png)
+![mag_test](Resources/Lab1/mag_test.png)<br />
 Checking if xschem works
-![xschem_test](Resources/Lab1/xschem_test.png)
+![xschem_test](Resources/Lab1/xschem_test.png)<br />
 Checking if netgen works
-![netgen_test](Resources/Lab1/netgen_test.png)
+![netgen_test](Resources/Lab1/netgen_test.png)<br />
 Checking if ngspice works
-![spice_test](Resources/Lab1/spice_test.png)
+![spice_test](Resources/Lab1/spice_test.png)<br />
 ### Creating inverter schematic using xschem
 An initial schematic is made by placing components from the open_pdk library<br />
 The required changes to the devices properties can be made here and will automatically reflect in the layout
-![xshem_inv](Resources/Lab1/xshem_inv.png)
+![xshem_inv](Resources/Lab1/xshem_inv.png)<br />
 Convert the schematic to a symbol
-![xshem_sym](Resources/Lab1/xshem_sym.png)
+![xshem_sym](Resources/Lab1/xshem_sym.png)<br />
 Using the symbol we can create an independent test bench to simulate the circuit
-![xshem_tb](Resources/Lab1/xshem_tb.png)
+![xshem_tb](Resources/Lab1/xshem_tb.png)<br />
 ### Creating and simulating testbench Schematic
 The circuit can be simulated in ngspice. *make sure to disable .subckt in the simulation tab for the netlist generated for sim*
 ![xschem_sim](Resources/Lab1/xschem_sim.png)
@@ -142,9 +142,9 @@ The circuit can be simulated in ngspice. *make sure to disable .subckt in the si
 The original schematic can be used to export a netlist, which can be imported into magic to create the layout. <br /><br />
 
 Set the appropiate device properties and route the layout.
-![mag_p1](Resources/Lab1/mag_p1.png)
-![mag_p1](Resources/Lab1/mag_p1.png)
-![mag_net](Resources/Lab1/mag_net.png)
+![mag_p1](Resources/Lab1/mag_p1.png)<br /><br />
+![mag_p1](Resources/Lab1/mag_p1.png)<br /><br />
+![mag_net](Resources/Lab1/mag_net.png)<br /><br />
 ### Performing LVS checks on testbench and layout netlists
 The netlist of the layout can be extracted using
 ```
