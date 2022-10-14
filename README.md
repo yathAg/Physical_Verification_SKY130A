@@ -30,10 +30,11 @@ To adequetly utilize the open source skywater130 pdk and understand the design f
 ![toolchains](Resources/Lab1/toolchains.png)
 
 *Note: open_pdk has to be installed last so it can correctly associate the xschem and magic directories.*
+*Note:if the configure step fails during any process its most likely due to missing additional packages and they need to be installed (preferably from source) to complete the installation*
 
 ### Magic
-Magic is an open source VLSI layout tool.<br />
-Install steps
+Magic is an open source VLSI layout tool.<br /><br />
+Install steps:
 ```
 $  git clone git://opencircuitdesign.com/magic
 $  cd magic
@@ -118,21 +119,41 @@ $ cd ../mag
 $ cp /usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc .magiccrc
 $ cd ../netgen
 ```
+Checking if magic works
 ![mag_test](Resources/Lab1/mag_test.png)
+Checking if xschem works
 ![xschem_test](Resources/Lab1/xschem_test.png)
+Checking if netgen works
 ![netgen_test](Resources/Lab1/netgen_test.png)
+Checking if ngspice works
 ![spice_test](Resources/Lab1/spice_test.png)
 ### Creating inverter schematic using xschem
+An initial schematic is made by placing components from the open_pdk library<br />
+The required changes to the devices properties can be made here and will automatically reflect in the layout
 ![xshem_inv](Resources/Lab1/xshem_inv.png)
+Convert the schematic to a symbol
 ![xshem_sym](Resources/Lab1/xshem_sym.png)
+Using the symbol we can create an independent test bench to simulate the circuit
 ![xshem_tb](Resources/Lab1/xshem_tb.png)
 ### Creating and simulating testbench Schematic
+The circuit can be simulated in ngspice. *make sure to disable .subckt in the simulation tab for the netlist generated for sim*
 ![xschem_sim](Resources/Lab1/xschem_sim.png)
 ### Creating inverter layout in Magic and exporting its netlist
+The original schematic can be used to export a netlist, which can be imported into magic to create the layout. <br /><br />
+
+Set the appropiate device properties and route the layout.
 ![mag_p1](Resources/Lab1/mag_p1.png)
 ![mag_p1](Resources/Lab1/mag_p1.png)
 ![mag_net](Resources/Lab1/mag_net.png)
 ### Performing LVS checks on testbench and layout netlists
+The netlist of the layout can be extracted using
+```
+% export do local
+% export all
+% ext2spice lvs
+% ext2spice
+```
+The schematic netlist and layout netlist can be compared using LVS by netgen
 ```
 $ netgen -batch lvs "../mag/inverter.spice inverter" "../xschem/inverter.spice inverter"
 ```
@@ -278,7 +299,7 @@ $ /usr/local/share/pdk/sky130A/libs.tech/magic/run_standard_drc.py /usr/local/sh
 ```
 % getcell sky130_fd_sc_hd__tapvpwrvgnd_1
 ```
-![drc](Resources/Lab2/drcc.png)
+![drc](Resources/Lab2/drc.png)
 
 ### LVS
 ![gen_spice](Resources/Lab2/gen_spice.png)
@@ -289,6 +310,7 @@ netgen -batch lvs "../mag/sky130_fd_sc_hd__and2_1.spice sky130_fd_sc_hd__and2_1"
 ![lvs_2](Resources/Lab2/lvs_2.png)
 
 ### XOR
+XOR is the process to compare to GDS files by highlighting any differences between the two.
 ```
 % flatten -nolabels xor_test
 ```
