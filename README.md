@@ -148,8 +148,8 @@ Set the appropiate device properties and route the layout.
 ### Performing LVS checks on testbench and layout netlists
 The netlist of the layout can be extracted using
 ```
-% export do local
-% export all
+% extract do local
+% extract all
 % ext2spice lvs
 % ext2spice
 ```
@@ -386,6 +386,38 @@ The detailed explaination of all the rules can be found as:
 #### Overlap Errors
 ![ex_7d](Resources/Lab3/ex_7d.png)<br /><br />
 ![ex_7e](Resources/Lab3/ex_7e.png)
+#### Latchup Rules
+![ex9](Resources/Lab3/ex9.png)
+### Antenna Rules
+```
+% extract all
+% antennacheck debug
+% antennacheck
+```
+![ex10_1](Resources/Lab3/ex10_1.png)<br /><br />
+![ex10_2](Resources/Lab3/ex10_2.png)<br /><br />
+![ex10_3](Resources/Lab3/ex10_3.png)
+
+### Density Rules
+The density of the fill patern can be checked in magic by
+```
+% cif cover MET2
+```
+![ex11_1](Resources/Lab3/ex11_1.png)<br /><br />
+
+After writing the gds file scripts can be used to generate the fill paterns
+```
+$/usr/local/share/pdk/sky130A/libs.tech/magic/check_density.py exercise_11.gds
+$/usr/local/share/pdk/sky130A/libs.tech/magic/generate_fill.py exercise_11.mag
+```
+![ex11_2](Resources/Lab3/ex11_2.png)<br /><br />
+The fill paterns can be accuratle loaded by
+```
+load excercise_11
+box values 0 0 0 0
+getcell excercise_11_fill_pattern child 0 0
+```
+![ex11_3](Resources/Lab3/ex11_3.png)
 
 ## Chapter 4 - LVS
 
