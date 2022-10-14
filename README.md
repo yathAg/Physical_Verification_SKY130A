@@ -281,7 +281,7 @@ netgen -batch lvs "../mag/sky130_fd_sc_hd__and2_1.spice sky130_fd_sc_hd__and2_1"
 ## Chapter 3 - DRC Issues
 
 Each foundry has its own manufacturing rules and we have to make sure that the layout abides by these. The stackup for the skywater130 process is as folows:
-![stack](Resources/Lab3/stack.svg)
+![stack](Resources/Lab3/stack.jpg)
 
 The detailed explaination of all the rules can be found as:
 [https://skywater-pdk.readthedocs.io/en/main/rules.html](https://skywater-pdk.readthedocs.io/en/main/rules.html)
@@ -332,8 +332,17 @@ The detailed explaination of all the rules can be found as:
 ![ex_5b](Resources/Lab3/ex_5b.png)
 #### derived_layers_automatic_layers
 ![ex_5c](Resources/Lab3/ex_5c.png)
-
-
+#### Paramterized Devices
+![ex_6a](Resources/Lab3/ex_6a.png)
+![ex_6b](Resources/Lab3/ex_6b.png)
+![ex_6c](Resources/Lab3/ex_6c.png)
+#### Angle errors
+![ex_7a](Resources/Lab3/ex_7a.png)
+![ex_7b](Resources/Lab3/ex_7b.png)
+![ex_7c](Resources/Lab3/ex_7c.png)
+#### Overlap Errors
+![ex_7d](Resources/Lab3/ex_7d.png)
+![ex_7e](Resources/Lab3/ex_7e.png)
 
 ## Chapter 4 - LVS
 
