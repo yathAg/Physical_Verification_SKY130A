@@ -105,7 +105,7 @@ cd ../netgen
 cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl setup.tcl
 ```
 ![mag_test](Resources/Lab1/mag_test.png)
-![xcshem_test](Resources/Lab1/xshem_test.png)
+![xschem_test](Resources/Lab1/xschem_test.png)
 ![netgen_test](Resources/Lab1/netgen_test.png)
 ![spice_test](Resources/Lab1/spice_test.png)
 ### Creating inverter schematic using xschem
@@ -113,7 +113,7 @@ cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl setup.tcl
 ![xshem_sym](Resources/Lab1/xshem_sym.png)
 ![xshem_tb](Resources/Lab1/xshem_tb.png)
 ### Creating and simulating testbench Schematic
-![xshem_sim](Resources/Lab1/xshem_sim.png)
+![xschem_sim](Resources/Lab1/xschem_sim.png)
 ### Creating inverter layout in Magic and exporting its netlist
 ![mag_p1](Resources/Lab1/mag_p1.png)
 ![mag_p1](Resources/Lab1/mag_p1.png)
