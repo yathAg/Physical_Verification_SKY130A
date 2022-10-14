@@ -2,7 +2,7 @@
 
 This repository contains the documantaion containg the work done during a 5 day workshop on physical verification carried out by VSD.
 
-The workshop describes the physical verification process that takes place during an RTL to GDSII flow using Skywater 130nm Technology, including DRC and LVS tests. This helps the participants get ready for the tape out and is particularly helpful for chip fabrication. The workshop assists in locating and fixing violations made during the physical verification stage. 
+The workshop describes the physical verification process that takes place during an RTL to GDSII flow using Skywater 130nm Technology, including DRC and LVS tests. This helps the participants get ready for the tape out and is particularly helpful for chip fabrication. The workshop assists in locating and fixing violations made during the physical verification stage.
 
 More information about the workshop can be found [here](https://www.vlsisystemdesign.com/physical-verification-using-sky130/)
 
@@ -12,12 +12,12 @@ A special thanks to Tim, Kunal and Sumanto for creating and helping out during t
 - [VSD-IAT](https://vsdiat.com/)
 
 ## Index
-* [Chapter 0 - Getting the tools](#Chapter 0 - Getting the tools)
-* [Chapter 1 - Understanding the design flow](#Chapter 1 - Understanding the design flow)
-* [Chapter 2 - DRC and LVS Fundamentals](#Chapter 2 - DRC and LVS Fundamentals)
-* [Chapter 3 - DRC Issues](#Chapter 3 - DRC Issues)
-* [Chapter 4 - LVS](#Chapter 4 - LVS)
-* [Additional Content - OpenLANE Design Flow](#Additional Content - OpenLANE Design Flow)
+* [Chapter 0 - Getting the tools](#Chapter-0---Getting-the-tools)
+* [Chapter 1 - Understanding the design flow](#Chapter-1---Understanding-the-design-flow)
+* [Chapter 2 - DRC and LVS Fundamentals](#Chapter-2---DRC-and-LVS-Fundamentals)
+* [Chapter 3 - DRC Issues](#Chapter-3---DRC-Issues)
+* [Chapter 4 - LVS](#Chapter-4---LVS)
+* [Additional Content - OpenLANE Design Flow](#Additional-Content---OpenLANE-Design-Flow)
 
 ## Chapter 0 - Getting the tools
 
@@ -501,5 +501,3 @@ generate_final_summary_report
 - **Density Planning** : The utilization ratio can be reduced to form more spaced circuits with lesser errors The FP_CORE_UTIL variable in the .config file
 - **Dont use cells** : Avoid using cells that are known to cause errors
 - **Manual verification** : For designs with lower number of DRC errors, the can be corrected with the methods disscused in chapter 3
-
-### Acknowledgement
