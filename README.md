@@ -89,15 +89,40 @@ Now that we have all the required tools installed lets get started with understa
 ## Chapter 1 - Understanding the design flow
 
 ### Verifiying the open_pdk installation
-
+An initial working directory can be made by copying the required files as follows:
+```
+mkdir Lab1_and
+cd Lab1_and
+mkdir mag
+mkdir netgen
+mkdir xschem
+cd xschem
+cp /usr/local/share/pdk/sky130A/libs.tech/xschem/xschemrc
+cp /usr/local/share/pdk/sky130A/libs.tech/ngspice/spinit .spiceinit
+cd ../mag
+cp /usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc .magiccrc
+cd ../netgen
+cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl setup.tcl
+```
+![mag_test](Resources/Lab1/mag_test.png)
+![xshem_test](Resources/Lab1/xshem_test.png)
+![netgen_test](Resources/Lab1/netgen_test.png)
+![spice_test](Resources/Lab1/spice_test.png)
 ### Creating inverter schematic using xschem
-
+![xshem_inv](Resources/Lab1/xshem_inv.png)
+![xshem_inv](Resources/Lab1/xshem_inv.png)
+![xshem_inv](Resources/Lab1/xshem_inv.png)
 ### Creating and simulating testbench Schematic
-
+![xshem_sim](Resources/Lab1/xshem_sim.png)
 ### Creating inverter layout in Magic and exporting its netlist
-
+![mag_p1](Resources/Lab1/mag_p1.png)
+![mag_p1](Resources/Lab1/mag_p1.png)
+![mag_net](Resources/Lab1/mag_net.png)
 ### Performing LVS checks on testbench and layout netlists
-
+```
+netgen -batch lvs "../mag/inverter.spice inverter" "../xschem/inverter.spice inverter"
+```
+![lvs](Resources/Lab1/lvs.png)
 ## Chapter 2 - DRC and LVS Fundamentals
 
 ### Design Rule Checking (DRC)
