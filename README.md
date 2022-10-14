@@ -98,7 +98,7 @@ Now that we have all the required tools installed lets get started with understa
 
 ### Performing LVS checks on testbench and layout netlists
 
-## Chapter 2 - DRC and LVS
+## Chapter 2 - DRC and LVS Fundamentals
 
 ### Design Rule Checking (DRC)
 Make sure design layout meets all silicon foundry rules for masks.
@@ -107,8 +107,6 @@ Make sure design layout meets all silicon foundry rules for masks.
 Make sure design layout matches a simulatable netlist by electrical connectivity and devices.
 
 ![LVS](Resources/Lab2/LVS.png)
-
-### GDSII file format
 
 ### Reading GDS files
 
@@ -256,7 +254,14 @@ netgen -batch lvs "../mag/sky130_fd_sc_hd__and2_1.spice sky130_fd_sc_hd__and2_1"
 
 
 ## Chapter 3 - DRC Issues
-Usefull Magic commands
+
+Each foundry has its own manufacturing rules and we have to make sure that the layout abides by these. The stackup for the skywater130 process is as folows:
+![stack](Resources/Lab3/stack.svg)
+
+The detailed explaination of all the rules can be found as:
+[https://skywater-pdk.readthedocs.io/en/main/rules.html](https://skywater-pdk.readthedocs.io/en/main/rules.html)
+
+### Usefull Magic commands
 - b
 - s
 - ?
@@ -265,38 +270,42 @@ Usefull Magic commands
 - : move e 0.14um
 - : box grow c 0.01um
 - : paint m1
+- drc find
+- see no *
+- see m1
 
-### width_rule
+### Solving sample DRC voilations in Magic
+#### width_rule
 ![ex_1a](Resources/Lab3/ex_1a.png)
-### spaceing_rule
+#### spaceing_rule
 ![ex_1b](Resources/Lab3/ex_1b.png)
-### wide_spacing_rule
+#### wide_spacing_rule
 ![ex_1c](Resources/Lab3/ex_1c.png)
-### notch_rule
+#### notch_rule
 ![ex_1d](Resources/Lab3/ex_1d.png)
-### via_size
+#### via_size
 ![ex_2a](Resources/Lab3/ex_2a.png)
-### multiple_vias
+#### multiple_vias
 ![ex_2b](Resources/Lab3/ex_2b.png)
-### via_overlap
+#### via_overlap
 ![ex_2c](Resources/Lab3/ex_2c.png)
-### auto_generate_via
+#### auto_generate_via
 ![ex_2d](Resources/Lab3/ex_2d.png)
-### minimum_area_rule
+#### minimum_area_rule
 ![ex_3a](Resources/Lab3/ex_3a.png)
-### minimum_hole_rule
+#### minimum_hole_rule
 ![ex_3b](Resources/Lab3/ex_3b.png)
-### wells
+#### wells
 ![ex_4a](Resources/Lab3/ex_4a.png)
-### deep_nwell
+#### deep_nwell
 ![ex_4c_1](Resources/Lab3/ex_4c_1.png)
-### automatic_deep_nwell
+#### automatic_deep_nwell
 ![ex_4c_2](Resources/Lab3/ex_4c_2.png)
-### derived_layers
+#### derived_layers
 ![ex_5a](Resources/Lab3/ex_5a.png)
-### derived_layer_high_voltage
+#### derived_layer_high_voltage
 ![ex_5b](Resources/Lab3/ex_5b.png)
-### derived_layers_automatic_layers
+#### derived_layers_automatic_layers
 ![ex_5c](Resources/Lab3/ex_5c.png)
 
 
@@ -437,3 +446,5 @@ generate_final_summary_report
 - **Density Planning** : The utilization ratio can be reduced to form more spaced circuits with lesser errors The FP_CORE_UTIL variable in the .config file
 - **Dont use cells** : Avoid using cells that are known to cause errors
 - **Manual verification** : For designs with lower number of DRC errors, the can be corrected with the methods disscused in chapter 3
+
+### Acknowledgement
