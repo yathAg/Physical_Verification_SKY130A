@@ -1,0 +1,2 @@
+#!/bin/sh
+magic -d OGL -rcfile /usr/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc

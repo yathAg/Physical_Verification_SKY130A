@@ -1,0 +1,6 @@
+* Example SPICE netlist netA.spice
+*
+X1 A B C cell1
+X2 A B A cell2
+X3 C C A cell3
+.end

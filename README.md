@@ -376,15 +376,15 @@ The detailed explaination of all the rules can be found as:
 #### derived_layers_automatic_layers
 ![ex_5c](Resources/Lab3/ex_5c.png)
 #### Paramterized Devices
-![ex_6a](Resources/Lab3/ex_6a.png)
-![ex_6b](Resources/Lab3/ex_6b.png)
+![ex_6a](Resources/Lab3/ex_6a.png)<br /><br />
+![ex_6b](Resources/Lab3/ex_6b.png)<br /><br />
 ![ex_6c](Resources/Lab3/ex_6c.png)
 #### Angle errors
-![ex_7a](Resources/Lab3/ex_7a.png)
-![ex_7b](Resources/Lab3/ex_7b.png)
+![ex_7a](Resources/Lab3/ex_7a.png)<br /><br />
+![ex_7b](Resources/Lab3/ex_7b.png)<br /><br />
 ![ex_7c](Resources/Lab3/ex_7c.png)
 #### Overlap Errors
-![ex_7d](Resources/Lab3/ex_7d.png)
+![ex_7d](Resources/Lab3/ex_7d.png)<br /><br />
 ![ex_7e](Resources/Lab3/ex_7e.png)
 
 ## Chapter 4 - LVS
