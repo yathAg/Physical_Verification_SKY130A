@@ -1,10 +1,11 @@
 # Physical_Verification_SKY130A
-
+![Workshop-Flyer](Resources/Lab1/Workshop-Flyer.jpeg)<br /><br />
 This repository contains the documantaion containg the work done during a 5 day workshop on physical verification carried out by VSD.
 
 The workshop describes the physical verification process that takes place during an RTL to GDSII flow using Skywater 130nm Technology, including DRC and LVS tests. This helps the participants get ready for the tape out and is particularly helpful for chip fabrication. The workshop assists in locating and fixing violations made during the physical verification stage.
 
 More information about the workshop can be found [here](https://www.vlsisystemdesign.com/physical-verification-using-sky130/)
+
 
 A special thanks to Tim, Kunal and Sumanto for creating and helping out during this amazing workshop
 - [R. Timothy Edwards](https://github.com/RTimothyEdwards)
