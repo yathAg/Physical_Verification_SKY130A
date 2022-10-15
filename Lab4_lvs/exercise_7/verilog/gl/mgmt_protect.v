@@ -45252,4 +45252,9 @@ module mgmt_protect (caravel_clk,
     .VPB(vccd),
     .VPWR(vccd));
 
+assign vssa1 = vssd;
+assign vssa2 = vssd;
+assign vssd1 = vssd;
+assign vssd2 = vssd;
+
 endmodule

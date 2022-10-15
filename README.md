@@ -154,6 +154,12 @@ The netlist of the layout can be extracted using
 % ext2spice lvs
 % ext2spice
 ```
+
+ext files are intermidiate files and can be cleaned using
+```
+rm *.ext
+/usr/local/share/pdk/bin/cleanup_unref.py -remove
+```
 The schematic netlist and layout netlist can be compared using LVS by netgen
 ```
 $ netgen -batch lvs "../mag/inverter.spice inverter" "../xschem/inverter.spice inverter"
@@ -608,7 +614,13 @@ on rerunning netgen we get no errors.
 ![ex6_3](Resources/Lab4/ex6_3.png)
 
 ### excercise_7
-WIP
+If the veilog code is not of stuctural level and has any behavorial assignment netgen treats it as a black box and doesnot evaluate it.
+![ex7_1](Resources/Lab4/ex7_1.png)
+
+Another issue arising in cells are when different power rails are in the layout connected to the same substrate but magic fails to extract this.
+![ex7_2](Resources/Lab4/ex7_2.png)
+The different power layers can be tied together in the verilog code to fix this error.
+![ex7_3](Resources/Lab4/ex7_3.png)
 ### excercise_8
 WIP
 ### excercise_9

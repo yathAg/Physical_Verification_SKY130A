@@ -20,6 +20,6 @@
 #
 #--------------------------------------------------------------------------------
 export MAGIC_EXT_USE_GDS=1
-netgen -batch lvs "../mag/mgmt_protect.spice mgmt_protect" "../verilog/mgmt_protect.v mgmt_protect" /usr/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl exercise_7_comp.out -json | tee lvs.log
+netgen -batch lvs "../mag/mgmt_protect.spice mgmt_protect" "../verilog/gl/mgmt_protect.v mgmt_protect" /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl exercise_7_comp.out -json | tee lvs.log
 echo ""
 ../../count_lvs.py exercise_7_comp.json | tee -a lvs.log
