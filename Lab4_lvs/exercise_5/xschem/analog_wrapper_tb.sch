@@ -1,4 +1,5 @@
-v {xschem version=2.9.9 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -33,17 +34,17 @@ N 430 -250 510 -250 { lab=GND}
 N 400 -210 480 -210 { lab=#net2}
 N 470 30 550 30 { lab=io_clamp_high[2:0]}
 N 460 10 530 10 { lab=io_analog[10:0]}
-N 410 50 490 50 { lab=io_clamp_low[2:0]}
+N 410 50 490 50 { lab=GND}
 N 490 50 490 160 { lab=GND}
 N 490 160 500 160 { lab=GND}
 N 300 -50 620 -50 { lab=io_oeb[26:0]}
 N 300 -70 480 -70 { lab=io_out[26:0]}
-N 520 -150 520 -60 { lab=io_oeb[16:15]}
-N 610 -150 610 -60 { lab=io_oeb[12:11]}
+N 520 -150 520 -60 { lab=GND}
+N 610 -150 610 -60 { lab=GND}
 N 850 -0 850 40 { lab=io_analog[4]}
-N 640 40 810 40 { lab=io_clamp_high[2:1]}
+N 640 40 810 40 { lab=GND}
 N 670 0 850 -0 { lab=io_analog[4]}
-N 640 100 850 100 { lab=io_clamp_high[0]}
+N 640 100 850 100 { lab=io_analog[4]}
 N 850 40 850 100 { lab=io_analog[4]}
 N 300 -270 400 -270 { lab=#net4}
 N 300 -230 400 -230 { lab=#net5}
@@ -88,8 +89,8 @@ C {devices/lab_pin.sym} 450 -70 0 0 {name=l5 sig_type=std_logic lab=io_out[26:0]
 C {devices/bus_connect.sym} 510 -50 0 0 {name=l6 lab=io_oeb[16:15]}
 C {devices/bus_connect.sym} 600 -50 0 0 {name=l7 lab=io_oeb[12:11]}
 C {devices/code_shown.sym} 920 -130 0 0 {name=s1 only_toplevel=false value=".param mc_mm_switch=0
-.lib /usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
-.include /usr/share/pdk/sky130A/libs.ref/sky130_fd_sc_hvl/spice/sky130_fd_sc_hvl.spice
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hvl/spice/sky130_fd_sc_hvl.spice
 .control
 tran 10u 20m
 plot V(io_out[11]) V(io_out[12]) V(io_out[15]) V(io_out[16])

@@ -1,0 +1,83 @@
+
+Subcircuit summary:
+Circuit 1: cell1                           |Circuit 2: cell1                           
+-------------------------------------------|-------------------------------------------
+r (2)                                      |r (2)                                      
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 3                          |Number of nets: 3                          
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: cell1                           |Circuit 2: cell1                           
+-------------------------------------------|-------------------------------------------
+B                                          |B                                          
+A                                          |A                                          
+C                                          |C                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes cell1 and cell1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: cell2                           |Circuit 2: cell2                           
+-------------------------------------------|-------------------------------------------
+c (2)                                      |c (2)                                      
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 3                          |Number of nets: 3                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: cell2                           |Circuit 2: cell2                           
+-------------------------------------------|-------------------------------------------
+B                                          |B                                          
+A                                          |A                                          
+C                                          |C                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes cell2 and cell2 are equivalent.
+
+Subcircuit summary:
+Circuit 1: cell3                           |Circuit 2: cell3                           
+-------------------------------------------|-------------------------------------------
+diode (2)                                  |diode (2)                                  
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 3                          |Number of nets: 3                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: cell3                           |Circuit 2: cell3                           
+-------------------------------------------|-------------------------------------------
+B                                          |B                                          
+C                                          |A **Mismatch**                             
+A                                          |C **Mismatch**                             
+---------------------------------------------------------------------------------------
+Cell pin lists for cell3 and cell3 altered to match.
+Device classes cell3 and cell3 are equivalent.
+
+Subcircuit summary:
+Circuit 1: test                            |Circuit 2: test                            
+-------------------------------------------|-------------------------------------------
+cell1 (1)                                  |cell1 (1)                                  
+cell2 (1)                                  |cell2 (1)                                  
+cell3 (1)                                  |cell3 (1)                                  
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 3                          |Number of nets: 3                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: test                            |Circuit 2: test                            
+-------------------------------------------|-------------------------------------------
+C                                          |C                                          
+B                                          |B                                          
+A                                          |A                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes test and test are equivalent.
+
+Final result: Circuits match uniquely.
+.

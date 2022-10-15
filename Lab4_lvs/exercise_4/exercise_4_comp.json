@@ -1,0 +1,134 @@
+[
+  {
+   "name": [
+      "cell1",
+      "cell1"
+   ],
+   "devices": [
+       [
+         ["r", 2 ]
+       ], [
+         ["r", 2 ]
+       ]
+   ],
+   "nets": [
+    3,
+    3
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "B",
+        "A",
+        "C"
+      ], [
+        "B",
+        "A",
+        "C"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "cell2",
+      "cell2"
+   ],
+   "devices": [
+       [
+         ["c", 2 ]
+       ], [
+         ["c", 2 ]
+       ]
+   ],
+   "nets": [
+    3,
+    3
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "B",
+        "A",
+        "C"
+      ], [
+        "B",
+        "A",
+        "C"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "cell3",
+      "cell3"
+   ],
+   "devices": [
+       [
+         ["diode", 2 ]
+       ], [
+         ["diode", 2 ]
+       ]
+   ],
+   "nets": [
+    3,
+    3
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "B",
+        "C",
+        "A"
+      ], [
+        "B",
+        "A",
+        "C"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "test",
+      "test"
+   ],
+   "devices": [
+       [
+         ["cell1", 1],
+         ["cell2", 1],
+         ["cell3", 1 ]
+       ], [
+         ["cell1", 1 ],
+         ["cell2", 1 ],
+         ["cell3", 1 ]
+       ]
+   ],
+   "nets": [
+    3,
+    3
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "C",
+        "B",
+        "A"
+      ], [
+        "C",
+        "B",
+        "A"
+      ]
+   ]
+  }
+]

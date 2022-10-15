@@ -1,6 +1,6 @@
 * Example SPICE netlist netA.spice
 *
-.subckt cell1 A B C
+.subckt cell1 C B A
 R1 A B 100
 R2 B C 100
 .ends
@@ -10,9 +10,9 @@ C1 A B 1E-12
 C2 B C 1E-12
 .ends
 
-.subckt cell3 A B C
-D1 A B diode
-D2 B C diode
+.subckt cell3 C B A
+D1 C B diode
+D2 B A diode
 .ends
 
 .subckt test A B C

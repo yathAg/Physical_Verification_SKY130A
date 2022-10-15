@@ -1,0 +1,82 @@
+Netgen 1.5.234 compiled on Monday 10 October 2022 11:55:12 PM IST
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Generating JSON file result
+Reading netlist file netA.spice
+Reading netlist file netB.spice
+Reading setup file sky130A_setup.tcl
+No property area found for device c
+No property area found for device c
+No property w found for device r
+No property l found for device r
+No property w found for device r
+No property l found for device r
+Model cell1 pin A == C
+Model cell1 pin A == C
+Comparison output logged to file exercise_4_comp.out
+Logging to file "exercise_4_comp.out" enabled
+
+Contents of circuit 1:  Circuit: 'cell1'
+Circuit cell1 contains 2 device instances.
+  Class: r                     instances:   2
+Circuit contains 3 nets.
+Contents of circuit 2:  Circuit: 'cell1'
+Circuit cell1 contains 2 device instances.
+  Class: r                     instances:   2
+Circuit contains 3 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 3 nets,    Circuit 2 contains 3 nets.
+
+
+Contents of circuit 1:  Circuit: 'cell2'
+Circuit cell2 contains 2 device instances.
+  Class: c                     instances:   2
+Circuit contains 3 nets.
+Contents of circuit 2:  Circuit: 'cell2'
+Circuit cell2 contains 2 device instances.
+  Class: c                     instances:   2
+Circuit contains 3 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 3 nets,    Circuit 2 contains 3 nets.
+
+
+Contents of circuit 1:  Circuit: 'cell3'
+Circuit cell3 contains 2 device instances.
+  Class: diode                 instances:   2
+Circuit contains 3 nets.
+Contents of circuit 2:  Circuit: 'cell3'
+Circuit cell3 contains 2 device instances.
+  Class: diode                 instances:   2
+Circuit contains 3 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 3 nets,    Circuit 2 contains 3 nets.
+
+
+Contents of circuit 1:  Circuit: 'test'
+Circuit test contains 3 device instances.
+  Class: cell1                 instances:   1
+  Class: cell2                 instances:   1
+  Class: cell3                 instances:   1
+Circuit contains 3 nets.
+Contents of circuit 2:  Circuit: 'test'
+Circuit test contains 3 device instances.
+  Class: cell1                 instances:   1
+  Class: cell2                 instances:   1
+  Class: cell3                 instances:   1
+Circuit contains 3 nets.
+
+Circuit 1 contains 3 devices, Circuit 2 contains 3 devices.
+Circuit 1 contains 3 nets,    Circuit 2 contains 3 nets.
+
+
+Final result: 
+Circuits match uniquely.
+.
+Logging to file "exercise_4_comp.out" disabled
+LVS Done.
+LVS reports no net, device, pin, or property mismatches.
+
+Total errors = 0

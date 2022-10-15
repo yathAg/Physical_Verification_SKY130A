@@ -1,0 +1,431 @@
+[
+  {
+  },
+  {
+  },
+  {
+  },
+  {
+  },
+  {
+  },
+  {
+  },
+  {
+   "name": [
+      "sky130_fd_sc_hvl__buf_8",
+      "sky130_fd_sc_hvl__buf_8"
+   ],
+   "devices": [
+       [
+         ["sky130_fd_pr__nfet_g5v0d10v5", 2],
+         ["sky130_fd_pr__pfet_g5v0d10v5", 2 ]
+       ], [
+         ["sky130_fd_pr__nfet_g5v0d10v5", 2 ],
+         ["sky130_fd_pr__pfet_g5v0d10v5", 2 ]
+       ]
+   ],
+   "nets": [
+    7,
+    7
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "A",
+        "VPWR",
+        "VPB",
+        "X",
+        "VGND",
+        "VNB"
+      ], [
+        "A",
+        "VPWR",
+        "VPB",
+        "X",
+        "VGND",
+        "VNB"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "sky130_fd_sc_hvl__schmittbuf_1",
+      "sky130_fd_sc_hvl__schmittbuf_1"
+   ],
+   "devices": [
+       [
+         ["sky130_fd_pr__nfet_g5v0d10v5", 4],
+         ["sky130_fd_pr__pfet_g5v0d10v5", 4],
+         ["sky130_fd_pr__res_generic_nd__hv", 1],
+         ["sky130_fd_pr__res_generic_pd__hv", 1 ]
+       ], [
+         ["sky130_fd_pr__nfet_g5v0d10v5", 4 ],
+         ["sky130_fd_pr__pfet_g5v0d10v5", 4 ],
+         ["sky130_fd_pr__res_generic_nd__hv", 1 ],
+         ["sky130_fd_pr__res_generic_pd__hv", 1 ]
+       ]
+   ],
+   "nets": [
+    11,
+    11
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "A",
+        "VPB",
+        "VNB",
+        "VGND",
+        "VPWR",
+        "X"
+      ], [
+        "A",
+        "VPB",
+        "VNB",
+        "VGND",
+        "VPWR",
+        "X"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "sky130_fd_sc_hvl__inv_8",
+      "sky130_fd_sc_hvl__inv_8"
+   ],
+   "devices": [
+       [
+         ["sky130_fd_pr__pfet_g5v0d10v5", 1],
+         ["sky130_fd_pr__nfet_g5v0d10v5", 1 ]
+       ], [
+         ["sky130_fd_pr__pfet_g5v0d10v5", 1 ],
+         ["sky130_fd_pr__nfet_g5v0d10v5", 1 ]
+       ]
+   ],
+   "nets": [
+    6,
+    6
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VPWR",
+        "VPB",
+        "VGND",
+        "VNB",
+        "A",
+        "Y"
+      ], [
+        "VPWR",
+        "VPB",
+        "VGND",
+        "VNB",
+        "A",
+        "Y"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "example_por",
+      "example_por"
+   ],
+   "devices": [
+       [
+         ["sky130_fd_pr__cap_mim_m3_2", 1],
+         ["sky130_fd_sc_hvl__buf_8", 2],
+         ["sky130_fd_pr__pfet_g5v0d10v5", 8],
+         ["sky130_fd_pr__nfet_g5v0d10v5", 3],
+         ["sky130_fd_pr__res_xhigh_po_0p69", 3],
+         ["sky130_fd_sc_hvl__schmittbuf_1", 1],
+         ["sky130_fd_pr__cap_mim_m3_1", 1],
+         ["sky130_fd_sc_hvl__inv_8", 1 ]
+       ], [
+         ["sky130_fd_pr__cap_mim_m3_2", 1 ],
+         ["sky130_fd_sc_hvl__buf_8", 2 ],
+         ["sky130_fd_pr__pfet_g5v0d10v5", 8 ],
+         ["sky130_fd_pr__nfet_g5v0d10v5", 3 ],
+         ["sky130_fd_pr__res_xhigh_po_0p69", 3 ],
+         ["sky130_fd_sc_hvl__schmittbuf_1", 1 ],
+         ["sky130_fd_pr__cap_mim_m3_1", 1 ],
+         ["sky130_fd_sc_hvl__inv_8", 1 ]
+       ]
+   ],
+   "nets": [
+    16,
+    16
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "vdd3v3",
+        "porb_h",
+        "porb_l",
+        "por_l",
+        "vdd1v8",
+        "vss"
+      ], [
+        "vdd3v3",
+        "porb_h",
+        "porb_l",
+        "por_l",
+        "vdd1v8",
+        "vss"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "user_analog_project_wrapper",
+      "user_analog_project_wrapper"
+   ],
+   "devices": [
+       [
+         ["example_por", 2],
+         ["sky130_fd_pr__res_generic_m3", 1 ]
+       ], [
+         ["example_por", 2 ],
+         ["(no matching element)", 0 ]
+       ]
+   ],
+   "nets": [
+    11,
+    10
+   ],
+   "badnets": [
+      [
+        [
+          [
+            "vccd1",
+            [
+              [ "example_por", "vdd1v8", 2 ]
+            ]
+          ],
+          [
+            "io_analog[4]",
+            [
+              [ "example_por", "vdd3v3", 1 ],
+              [ "sky130_fd_pr__res_generic_m3", "end_a|end_b", 1 ]
+            ]
+          ],
+          [
+            "vssa1",
+            [
+              [ "example_por", "vss", 2 ]
+            ]
+          ]
+        ], [
+          [
+            "vccd1",
+            [
+              [ "example_por", "vdd1v8", 2 ]
+            ]
+          ],
+          [
+            "vssa1",
+            [
+              [ "example_por", "vss", 2 ]
+            ]
+          ],
+          [
+            "(no matching net)",
+            [
+              [ "", "", 0 ]
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            "io_out[12]",
+            [
+              [ "example_por", "por_l", 1 ]
+            ]
+          ],
+          [
+            "io_out[11]",
+            [
+              [ "example_por", "porb_l", 1 ]
+            ]
+          ],
+          [
+            "gpio_analog[3]",
+            [
+              [ "example_por", "porb_h", 1 ]
+            ]
+          ],
+          [
+            "vdda1",
+            [
+              [ "example_por", "vdd3v3", 1 ]
+            ]
+          ],
+          [
+            "io_clamp_high[0]",
+            [
+              [ "sky130_fd_pr__res_generic_m3", "end_a|end_b", 1 ]
+            ]
+          ],
+          [
+            "gpio_analog[7]",
+            [
+              [ "example_por", "porb_h", 1 ]
+            ]
+          ],
+          [
+            "io_out[16]",
+            [
+              [ "example_por", "por_l", 1 ]
+            ]
+          ],
+          [
+            "io_out[15]",
+            [
+              [ "example_por", "porb_l", 1 ]
+            ]
+          ]
+        ], [
+          [
+            "io_out[16]",
+            [
+              [ "example_por", "por_l", 1 ]
+            ]
+          ],
+          [
+            "io_out[12]",
+            [
+              [ "example_por", "por_l", 1 ]
+            ]
+          ],
+          [
+            "io_out[15]",
+            [
+              [ "example_por", "porb_l", 1 ]
+            ]
+          ],
+          [
+            "io_out[11]",
+            [
+              [ "example_por", "porb_l", 1 ]
+            ]
+          ],
+          [
+            "gpio_analog[7]",
+            [
+              [ "example_por", "porb_h", 1 ]
+            ]
+          ],
+          [
+            "gpio_analog[3]",
+            [
+              [ "example_por", "porb_h", 1 ]
+            ]
+          ],
+          [
+            "io_analog[4]",
+            [
+              [ "example_por", "vdd3v3", 1 ]
+            ]
+          ],
+          [
+            "vdda1",
+            [
+              [ "example_por", "vdd3v3", 1 ]
+            ]
+          ]
+        ]
+      ]
+   ],
+   "badelements": [
+      [
+        [
+          [
+            "sky130_fd_pr__res_generic_m3:0",
+            [
+              [ "end_a", 2 ]
+            ]
+          ]
+        ], [
+          [
+            "(no matching instance)",
+            [
+              [ "", 0 ]
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            "user_analog_proj_example_0//example_por_1",
+            [
+              [ "vdd3v3", 1 ],
+              [ "vdd1v8", 2 ],
+              [ "vss", 2 ],
+              [ "porb_h", 1 ],
+              [ "por_l", 1 ],
+              [ "porb_l", 1 ]
+            ]
+          ],
+          [
+            "user_analog_proj_example_0//example_por_0",
+            [
+              [ "vdd3v3", 2 ],
+              [ "vdd1v8", 2 ],
+              [ "vss", 2 ],
+              [ "porb_h", 1 ],
+              [ "por_l", 1 ],
+              [ "porb_l", 1 ]
+            ]
+          ]
+        ], [
+          [
+            "example_por:2",
+            [
+              [ "vdd3v3", 1 ],
+              [ "vdd1v8", 2 ],
+              [ "vss", 2 ],
+              [ "porb_h", 1 ],
+              [ "por_l", 1 ],
+              [ "porb_l", 1 ]
+            ]
+          ],
+          [
+            "example_por:1",
+            [
+              [ "vdd3v3", 1 ],
+              [ "vdd1v8", 2 ],
+              [ "vss", 2 ],
+              [ "porb_h", 1 ],
+              [ "por_l", 1 ],
+              [ "porb_l", 1 ]
+            ]
+          ]
+        ]
+      ]
+   ],
+   "pins": [
+      [
+        "vccd1",
+        "io_analog[4]"
+      ], [
+        "vccd1",
+        "vssa1"
+      ]
+   ]
+  }
+]

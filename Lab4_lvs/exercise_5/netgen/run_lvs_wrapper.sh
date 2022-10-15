@@ -19,6 +19,6 @@
 # top-level xschem subcircuit from the wrapper testbench.
 #
 #--------------------------------------------------------------------------------
-netgen -batch lvs "../mag/user_analog_project_wrapper.spice user_analog_project_wrapper" "../xschem/user_analog_project_wrapper.spice user_analog_project_wrapper" /usr/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl wrapper_comp.out -json | tee lvs.log
+netgen -batch lvs "../mag/user_analog_project_wrapper.spice user_analog_project_wrapper" "../xschem/analog_wrapper_tb.spice user_analog_project_wrapper" /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl wrapper_comp.out -json | tee lvs.log
 echo ""
 ../../count_lvs.py wrapper_comp.json | tee -a lvs.log

@@ -4,13 +4,12 @@ This repository contains the documentation of the work done during a five-day ph
 
 The workshop describes the physical verification process that takes place during an RTL to GDSII flow using Skywater 130nm Technology, including DRC and LVS tests. This helps the participants get ready for the tape out and is particularly helpful for chip fabrication. The workshop assists in locating and fixing violations made during the physical verification stage.
 
-More information about the workshop can be found [here](https://www.vlsisystemdesign.com/physical-verification-using-sky130/)
+More information about the workshop can be found at [https://www.vlsisystemdesign.com/physical-verification-using-sky130/](https://www.vlsisystemdesign.com/physical-verification-using-sky130/)
 
 
 A special thanks to Tim, Kunal, and Sumanto for creating and helping out during this fantastic workshop
 - [R. Timothy Edwards](https://github.com/RTimothyEdwards)
 - [Kunal Ghosh](https://github.com/kunalg123)
-- [VSD-IAT](https://vsdiat.com/)
 
 ## Index
 * [Chapter 0 - Getting the tools](#Chapter-0---Getting-the-tools)
@@ -119,6 +118,7 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/ngspice/spinit .spiceinit
 $ cd ../mag
 $ cp /usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc .magiccrc
 $ cd ../netgen
+$ cp /usr/local/share/pdk/sky130A/libs.tech/netgen//sky130A_setup.tcl .
 ```
 Checking if magic works
 ![mag_test](Resources/Lab1/mag_test.png)<br /><br />
@@ -518,7 +518,33 @@ We see how this results in a device count mismatch
 both the cells show up in the same partition
 This highlights how even though components in the comp.out file may be aligned but are a complete mismatch
 ### excercise_4
-WIP
+Devices have been added to subckts and as they do not begin with X they are not subckts themselves but low level components.
+
+Low level circuits such as resistors can have their pin swapped ie they are permuteable. We can tell netgen to consider this by:
+
+first copying the tech file to the same directory
+```
+$ cp /usr/local/share/pdk/sky130A/libs.tech/netgen//sky130A_setup.tcl .
+```
+
+Editing the run_lvs.sh script
+```
+$ netgen -batch lvs "netA.spice test" "netB.spice test" \
+  sky130A_setup.tcl \
+  exercise_4_comp.out -json | tee lvs.log
+```
+Apending the following lines to the bottom of sky130A_setup.tcl
+
+```
+permute "-circuit1 cell1" A C
+permute "-circuit2 cell1" A C
+```
+pn running lvs we see the circuits match
+![ex4_1](Resources/Lab4/ex4_1.png)
+
+For the diode subckt when pins A and C are swapped both at the port name and low level cells, after running lvs we get no error but the comp.out file highlights how pins A and C have been swapped.
+![ex4_2](Resources/Lab4/ex4_2.png)
+
 ### excercise_5
 WIP
 ### excercise_6
