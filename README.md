@@ -579,8 +579,21 @@ Parameterized devices are extracted as individual devices strung together not as
 
 ![ex5_6](Resources/Lab4/ex5_6.png)
 
+Analysing the output for the wrapper again we can see the following errors in the comp.out files
+![ex5_7](Resources/Lab4/ex5_7.png)<br /><br />
+![ex5_8](Resources/Lab4/ex5_8.png)
 
+Lets fic the i0_analog[4] error,
+In the .mag file for the circuit we can see the 2 nets are shorted, that can be fixed by adding a resistor (resmet3) on the layer and re exporting the netlists
+make a not of the resistor size.
+![ex5_9](Resources/Lab4/ex5_9.png)
 
+Now edit the schematic bt=y adding the resistor and giving the appropriate values.
+Make sure to export the tb netlist and not only the subckt.
+![ex5_10](Resources/Lab4/ex5_10.png)
+
+On comparing the netlists again we can see a the mismatch error is resolved
+![ex5_11](Resources/Lab4/ex5_11.png)
 ### excercise_6
 WIP
 ### excercise_7

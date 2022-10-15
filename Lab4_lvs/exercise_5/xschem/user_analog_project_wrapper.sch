@@ -71,9 +71,9 @@ C {devices/lab_pin.sym} 4130 -280 0 1 {name=l9 sig_type=std_logic lab=io_out[12]
 C {devices/lab_pin.sym} 4110 -10 0 1 {name=l10 sig_type=std_logic lab=gpio_analog[7]}
 C {devices/lab_pin.sym} 4110 20 0 1 {name=l11 sig_type=std_logic lab=io_out[15]}
 C {devices/lab_pin.sym} 4110 50 0 1 {name=l12 sig_type=std_logic lab=io_out[16]}
-C {sky130_fd_pr/res_generic_m3.sym} 3610 -90 1 0 {name=R1
+C {devices/lab_pin.sym} 3580 -90 0 0 {name=l5 sig_type=std_logic lab=io_clamp_high[0]}
+C {sky130_fd_pr/res_generic_m1.sym} 3610 -90 1 0 {name=R1
 W=11
 L=1.5
 model=res_generic_m3
 mult=1}
-C {devices/lab_pin.sym} 3580 -90 0 0 {name=l5 sig_type=std_logic lab=io_clamp_high[0]}
