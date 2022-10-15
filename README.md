@@ -1,13 +1,13 @@
 # Physical_Verification_SKY130A
 ![Workshop-Flyer](Resources/Lab1/Workshop-Flyer.jpeg)<br /><br />
-This repository contains the documantaion containg the work done during a 5 day workshop on physical verification carried out by VSD.
+This repository contains the documentation of the work done during a five-day physical verification workshop carried out by VSD.
 
 The workshop describes the physical verification process that takes place during an RTL to GDSII flow using Skywater 130nm Technology, including DRC and LVS tests. This helps the participants get ready for the tape out and is particularly helpful for chip fabrication. The workshop assists in locating and fixing violations made during the physical verification stage.
 
 More information about the workshop can be found [here](https://www.vlsisystemdesign.com/physical-verification-using-sky130/)
 
 
-A special thanks to Tim, Kunal and Sumanto for creating and helping out during this amazing workshop
+A special thanks to Tim, Kunal, and Sumanto for creating and helping out during this fantastic workshop
 - [R. Timothy Edwards](https://github.com/RTimothyEdwards)
 - [Kunal Ghosh](https://github.com/kunalg123)
 - [VSD-IAT](https://vsdiat.com/)
@@ -22,7 +22,7 @@ A special thanks to Tim, Kunal and Sumanto for creating and helping out during t
 
 ## Chapter 0 - Getting the tools
 
-To adequetly utilize the open source skywater130 pdk and understand the design flow we first require to install all the tools, which are
+To adequately utilize the open source skywater130 pdk and understand the design flow, we first require to install all the tools, which are
 - open_pdk
 - magic
 - ngspice
@@ -31,10 +31,10 @@ To adequetly utilize the open source skywater130 pdk and understand the design f
 ![toolchains](Resources/Lab1/toolchains.png)
 
 *Note: open_pdk has to be installed last so it can correctly associate the xschem and magic directories.*
-*Note:if the configure step fails during any process its most likely due to missing additional packages and they need to be installed (preferably from source) to complete the installation*
+*Note: if the configure step fails during any process, its most likely due to missing additional packages, and they need to be installed (preferably from source) to complete the installation*
 
 ### Magic
-Magic is an open source VLSI layout tool.<br /><br />
+Magic is an open-source VLSI layout tool.<br /><br />
 Install steps:
 ```
 $  git clone git://opencircuitdesign.com/magic
@@ -43,7 +43,7 @@ $	 ./configure
 $  make
 $  sudo make install
 ```
-More info can be found at: [http://opencircuitdesign.com/magic/index.html](http://opencircuitdesign.com/magic/index.html)
+More info can be found at [http://opencircuitdesign.com/magic/index.html](http://opencircuitdesign.com/magic/index.html)
 
 ### Netgen
 Netgen is a tool for comparing netlists, a process known as LVS, which stands for "Layout vs. Schematic" <br /><br />
@@ -55,7 +55,7 @@ $	./configure
 $  make
 $  sudo make install
 ```
-More info can be found at: [http://opencircuitdesign.com/netgen/index.html](http://opencircuitdesign.com/netgen/index.html)
+More info can be found at [http://opencircuitdesign.com/netgen/index.html](http://opencircuitdesign.com/netgen/index.html)
 
 ### Xschem
 Xschem is a schematic capture program <br /><br />
@@ -66,13 +66,13 @@ $	./configure
 $  make
 $  sudo make install
 ```
-More info can be found at: [http://repo.hu/projects/xschem/index.html](http://repo.hu/projects/xschem/index.html)
+More info can be found at [http://repo.hu/projects/xschem/index.html](http://repo.hu/projects/xschem/index.html)
 
 ### Ngspice
-ngspice is the open source spice simulator for electric and electronic circuits.<br /><br />
+ngspice is the open-source spice simulator for electric and electronic circuits.<br /><br />
 Install steps:<br />
 
-After downloading the tar ball from [https://sourceforge.net/projects/ngspice/files/](https://sourceforge.net/projects/ngspice/files/) to a local directory unpack it using:
+After downloading the tarball from [https://sourceforge.net/projects/ngspice/files/](https://sourceforge.net/projects/ngspice/files/) to a local directory, unpack it using:
 ```
  $ tar -zxvf ngspice-37.tar.gz
  $ cd ngspice-37
@@ -82,9 +82,9 @@ After downloading the tar ball from [https://sourceforge.net/projects/ngspice/fi
  $ make
  $ sudo make install
 ```
-More info can be found at: [https://ngspice.sourceforge.io/index.html](https://ngspice.sourceforge.io/index.html)
+More info can be found at [https://ngspice.sourceforge.io/index.html](https://ngspice.sourceforge.io/index.html)
 
-Please note that to view the simulation graphs of ngspice, xterm is required and can be installed using
+Please note that to view the simulation graphs of ngspice, xterm is required and can be installed using.
 ```
 $ sudo apt-get update
 $ sudo apt-get install xterm
@@ -102,7 +102,7 @@ $  make
 $  sudo make install
 ```
 
-Now that we have all the required tools installed lets get started with understanding the design flow!
+Now that we have all the necessary tools installed let's understand the design flow!
 ## Chapter 1 - Understanding the design flow
 
 ### Verifiying the open_pdk installation
@@ -130,19 +130,19 @@ Checking if ngspice works
 ![spice_test](Resources/Lab1/spice_test.png)<br /><br />
 ### Creating inverter schematic using xschem
 An initial schematic is made by placing components from the open_pdk library<br />
-The required changes to the devices properties can be made here and will automatically reflect in the layout
+The required changes to the properties of the device can be made here and will automatically reflect in the layout
 ![xshem_inv](Resources/Lab1/xshem_inv.png)<br /><br />
 Convert the schematic to a symbol
 ![xshem_sym](Resources/Lab1/xshem_sym.png)<br /><br />
-Using the symbol we can create an independent test bench to simulate the circuit
+Using the symbol, we can create an independent test bench to simulate the circuit
 ![xshem_tb](Resources/Lab1/xshem_tb.png)<br /><br />
 ### Creating and simulating testbench Schematic
-The circuit can be simulated in ngspice. *make sure to disable .subckt in the simulation tab for the netlist generated for sim*
+The circuit can be simulated in ngspice. *make sure to disable .subckt in the simulation tab for the netlist generated for the sim*
 ![xschem_sim](Resources/Lab1/xschem_sim.png)
 ### Creating inverter layout in Magic and exporting its netlist
 The original schematic can be used to export a netlist, which can be imported into magic to create the layout. <br /><br />
 
-Set the appropiate device properties and route the layout.
+Set the appropriate device properties and route the layout.
 ![mag_p1](Resources/Lab1/mag_p1.png)<br /><br /><br />
 ![mag_p1](Resources/Lab1/mag_p1.png)<br /><br /><br />
 ![mag_net](Resources/Lab1/mag_net.png)<br /><br /><br />
@@ -162,10 +162,10 @@ $ netgen -batch lvs "../mag/inverter.spice inverter" "../xschem/inverter.spice i
 ## Chapter 2 - DRC and LVS Fundamentals
 
 ### Design Rule Checking (DRC)
-Make sure design layout meets all silicon foundry rules for masks.
+Make sure the design layout meets all silicon foundry rules for masks.
 
 ### Layout vs. Schematic (LVS)
-Make sure design layout matches a simulatable netlist by electrical connectivity and devices.
+Make sure the design layout matches a simulatable netlist by electrical connectivity and devices.
 
 ![LVS](Resources/Lab2/LVS.png)
 
@@ -213,7 +213,7 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc ./.magicrc
 
 ### Abstract views
 
-Note: difference between load and getcell
+Note: the difference between load and getcell
 
 The difference is between a cell and an instance of that cell.
 If you do load inverter, then you will be editing the cell called inverter.
@@ -230,19 +230,19 @@ If you do getcell inverter, then you will place an instance of the cell inverter
 ![abstract_view](Resources/Lab2/abstract_view.png)
 
 
-Restart magic to and the cell fails to be loaded properly because the changes were not saved
+Restart magic and the cell fails to be adequately loaded because the changes were not saved.
 ```
 %gds read test
 %save test
 ```
 ![failed_load](Resources/Lab2/failed_load.png)
 
-When test is reloaded after saving we get the original layout
+When the test is reloaded after saving, we get the original layout.
 ```
 % load test
 % gds write test
 ```
-We can edit the cell by making it editable
+We can edit the cell by making it editable.
 ```
 % property
 % cellname writeable sky130_fd_sc_hd__and2_1 true
@@ -250,7 +250,7 @@ We can edit the cell by making it editable
 ```
 ![editing](Resources/Lab2/editing.png)
 
-and after restarting magic and reloading it we still get an unchanged cell
+And after restarting magic and reloading it, we still get an unchanged cell
 ```
 % gds read test
 ```
@@ -311,7 +311,7 @@ netgen -batch lvs "../mag/sky130_fd_sc_hd__and2_1.spice sky130_fd_sc_hd__and2_1"
 ![lvs_2](Resources/Lab2/lvs_2.png)
 
 ### XOR
-XOR is the process to compare to GDS files by highlighting any differences between the two.
+XOR is the process of comparing to GDS files by highlighting any differences between the two.
 ```
 % flatten -nolabels xor_test
 ```
@@ -327,10 +327,10 @@ edit the cell
 Each foundry has its own manufacturing rules and we have to make sure that the layout abides by these. The stackup for the skywater130 process is as folows:
 ![stack](Resources/Lab3/stack.jpg)
 
-The detailed explaination of all the rules can be found as:
+The detailed explaination of all the rules can be found at:
 [https://skywater-pdk.readthedocs.io/en/main/rules.html](https://skywater-pdk.readthedocs.io/en/main/rules.html)
 
-### Usefull Magic commands
+### Useful Magic commands
 - b
 - s
 - ?
@@ -343,7 +343,7 @@ The detailed explaination of all the rules can be found as:
 - see no *
 - see m1
 
-### Solving sample DRC voilations in Magic
+### Solving sample DRC violations in Magic
 #### width_rule
 ![ex_1a](Resources/Lab3/ex_1a.png)
 #### spaceing_rule
@@ -376,7 +376,7 @@ The detailed explaination of all the rules can be found as:
 ![ex_5b](Resources/Lab3/ex_5b.png)
 #### derived_layers_automatic_layers
 ![ex_5c](Resources/Lab3/ex_5c.png)
-#### Paramterized Devices
+#### Parameterized Devices
 ![ex_6a](Resources/Lab3/ex_6a.png)<br /><br />
 ![ex_6b](Resources/Lab3/ex_6b.png)<br /><br />
 ![ex_6c](Resources/Lab3/ex_6c.png)
@@ -400,19 +400,19 @@ The detailed explaination of all the rules can be found as:
 ![ex10_3](Resources/Lab3/ex10_3.png)
 
 ### Density Rules
-The density of the fill patern can be checked in magic by
+The density of the fill pattern can be checked in magic by
 ```
 % cif cover MET2
 ```
 ![ex11_1](Resources/Lab3/ex11_1.png)<br /><br />
 
-After writing the gds file scripts can be used to generate the fill paterns
+After writing the gds file, scripts can be used to generate the fill patterns
 ```
 $/usr/local/share/pdk/sky130A/libs.tech/magic/check_density.py exercise_11.gds
 $/usr/local/share/pdk/sky130A/libs.tech/magic/generate_fill.py exercise_11.mag
 ```
 ![ex11_2](Resources/Lab3/ex11_2.png)<br /><br />
-The fill paterns can be accuratle loaded by
+The fill patterns can be accurately loaded by
 ```
 load excercise_11
 box values 0 0 0 0
@@ -425,28 +425,28 @@ getcell excercise_11_fill_pattern child 0 0
 ### excercise_1
 
 Netgen will compare 2 netlists even if the cells are not contained in subckts.
-netgen can be launched with a gui using
+netgen can be launched with a GUI using
 ```
 $ netgen
 ```
-and then the 2 spice files can be compared using
+And then the 2 spice files can be compared using
 ```
 % lvs netA.spice netB.spice
 ```
 ![ex1_1](Resources/Lab4/ex1_1.png)
 
-The actual information can be better analyised in the comp.out file. By editing a netlist to mismatch and analysing it we see
+The actual information can be better analyzed in the comp.out file. By editing a netlist to mismatch and analyzing it we see
 ![ex1_2](Resources/Lab4/ex1_2.png)
 
-netgen does not compare net names, but matches them as closely as possible putting them in the same partition.
+netgen does not compare net names but matches them as closely as possible, putting them in the same partition.
 Here the format cell2/1 = 1 => pin 1 on cell 2 appears once
 ![ex1_3](Resources/Lab4/ex1_3.png)
 
-In the device mismatch the Instance: cell3:3  1 = 3 reprasents pin 1 of the cell3 instance has a fanout of 3
+In the device mismatch the Instance: cell3:3  1 = 3 represents pin 1 of the cell3 instance has a fanout of 3
 
 ![ex1_4](Resources/Lab4/ex1_4.png)
 
-*Note: It is usually easier to debug from the netmismatch than the device mismatch*
+*Note: It is usually easier to debug from the net mismatch than the device mismatch*
 
 ### excercise_2
 
@@ -454,9 +454,9 @@ Unlike magic, Netgen has to be reinitialized between runs this can be done by
 ```
 reinitialize
 ```
-we can see despite having a subckt defination the devices are not checked
+we can see despite having a subckt definition the devices are not checked
 ![ex2_1](Resources/Lab4/ex2_1.png)
-A subckt defination is not an active component, it is only a device defination. Only subckt lines starting with x in a spice netlist are considered as active components. Both the spice netlists are considered as empty lists here by netgen
+A subckt definition is not an active component. It is only a device definition. Only subckt lines starting with x in a spice netlist are considered as active components. Both the spice netlists are considered as empty lists here by netgen
 
 It is better to compare the netlists at a subckt level rather than the top level. we can give the subckt name to netgen by:
 ```
@@ -464,20 +464,20 @@ It is better to compare the netlists at a subckt level rather than the top level
 ```
 ![ex2_2](Resources/Lab4/ex2_2.png)
 
-Netgen does note care about the order of the pin names, it cares wether all the pin names are the same
+Netgen does not care about the order of the pin names. It cares whether all the pin names are the same.
 
-By changing the pin name order in netA.spice and reruning lvs
+By changing the pin name order in netA.spice and rerunning lvs
 ![ex2_3](Resources/Lab4/ex2_3.png)
 
-We see the circuits are matched, by swaping pin names at the top level inside the circuit and rechecking we get the mismatch error.
+We see the circuits are matched. By swapping pin names at the top level inside the circuit and rechecking, we get the mismatch error.
 
 ![ex2_4](Resources/Lab4/ex2_4.png)
 
-this indicates that it is okay to have port order in an  netlist in f=differnt order, but since netgen cannot make any assumptions about the top level the pin names should match.
+this indicates that it is okay to have port order in an netlist in a differnt order, but since netgen cannot make any assumptions about the top level the pin names should match.
 
 ### excercise_3
 
-Instead of always running the gui a batch script can be made to run netgen in batch mode and output the files in a json file with a custom name
+Instead of always running the GUI, a batch script can be made to run netgen in batch mode and output the files in a json file with a custom name
 ```
 $ netgen -batch lvs "netA.spice test" "netB.spice test" \
   /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl \
@@ -488,10 +488,10 @@ The json file gives a more machine readable file and can be viewed Using
 ../count_lvs.py | tee -a lvs.log
 ```
 
-subckts that are defined and are completely empty are considered as blackbox entries. Ie the defination is a stand in for the circuit with the correct pin names and order. We can see how these pin names are reflected in the comp.out file.
+subckts that are defined and are completely empty are considered as blackbox entries. Ie the definition is a stand in for the circuit with the correct pin names and order. We can see how these pin names are reflected in the comp.out file.
 ![ex3_1](Resources/Lab4/ex3_1.png)
 
-By changing the pin name order of subckt cell1 we do get a mismatch and this shows that the cell names are meaningfull
+By changing the pin name order of subckt cell1 we do get a mismatch and this shows that the cell names are meaningful
 ![ex3_2](Resources/Lab4/ex3_2.png)
 
 By changing the port names in cell1 from A B C to A B D and re running we get proxypins.
@@ -501,12 +501,12 @@ Netgen assumes that the cell has all pin A B C D and adds the proxy pin to show 
 
 ![ex3_3](Resources/Lab4/ex3_3.png)
 
-By changing the cell1 to cell 4 in both the defination and the instanciation.
+By changing the cell1 to cell 4 in both the definition and the instantiation.
 
-We see that cells match and the cells are being flattened. This highlights an issue with blackcells. It cannot recognise when it is a blackbox cell and when it is an empty circuit
+We see that cells match and the cells are being flattened. This highlights an issue with blackcells. It cannot recognize when it is a blackbox cell and when it is an empty circuit
 
 ![ex3_4](Resources/Lab4/ex3_4.png)
-This can be solved by using the -blackbox flag which tells netgen to trat any empty cells as blackbox entries
+This can be solved by using the -blackbox flag which tells netgen to treat any empty cells as blackbox entries
 ```
 $ netgen -batch lvs "netA.spice test" "netB.spice test" \
   /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl \
@@ -516,7 +516,7 @@ We see how this results in a device count mismatch
 ![ex3_5](Resources/Lab4/ex3_5.png)
 
 both the cells show up in the same partition
-This highlights how even though components in the comp.out file may be alligened but are a complete mismatch
+This highlights how even though components in the comp.out file may be aligned but are a complete mismatch
 ### excercise_4
 WIP
 ### excercise_5
@@ -540,7 +540,7 @@ OpenLANE is an automated RTL to GDSII flow based on several components including
 1. **Synthesis**
     1. `yosys/abc` - Perform RTL synthesis and technology mapping.
     2. `OpenSTA` - Performs static timing analysis on the resulting netlist to generate timing reports
-2. **Floorplaning**
+2. **Floorplanning**
     1. `init_fp` - Defines the core area for the macro as well as the rows (used for placement) and the tracks (used for routing)
     2. `ioplacer` - Places the macro input and output ports
     3. `pdngen` - Generates the power distribution network
@@ -548,7 +548,7 @@ OpenLANE is an automated RTL to GDSII flow based on several components including
 3. **Placement**
     1. `RePLace` - Performs global placement
     2. `Resizer` - Performs optional optimizations on the design
-    3. `OpenDP` - Perfroms detailed placement to legalize the globally placed components
+    3. `OpenDP` - Performs detailed placement to legalize the globally placed components
 4. **CTS**
     1. `TritonCTS` - Synthesizes the clock distribution network (the clock tree)
 5. **Routing**
@@ -569,11 +569,11 @@ All the information about the project can be found in the openlANE documentation
 
 ### config.tcl
 
-this file is nessecary for running the openLANE flow and its documentation can be found at:
+this file is necessary for running the openLANE flow and its documentation can be found at:
 [https://openlane.readthedocs.io/en/latest/reference/configuration.html](https://openlane.readthedocs.io/en/latest/reference/configuration.html)
 
 ### Example - openLANE without interactive run
-run the following in the openLANE deirectory
+run the following in the openLANE directory
 ```
 export PDK_ROOT=/usr/local/share/pdk
 make mount
@@ -596,7 +596,7 @@ package require openlane
 prep -design spm -tag run1
 run_synthesis
 ```
-Run the Floorplaning using
+Run the Floorplanning using
 ```
 run_floorplan
 ```
@@ -659,8 +659,8 @@ DRC_checks
 ```
 generate_final_summary_report
 ```
-### Example - Technique to prevant DRC errors
+### Example - Technique to prevent DRC errors
 - **Local Interconnect rules**  : Avoid routing large traces on the local interconnect
 - **Density Planning** : The utilization ratio can be reduced to form more spaced circuits with lesser errors The FP_CORE_UTIL variable in the .config file
 - **Dont use cells** : Avoid using cells that are known to cause errors
-- **Manual verification** : For designs with lower number of DRC errors, the can be corrected with the methods disscused in chapter 3
+- **Manual verification** : For designs with lower number of DRC errors, the can be corrected with the methods discussed in chapter 3
