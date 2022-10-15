@@ -113,10 +113,10 @@ $ mkdir mag
 $ mkdir netgen
 $ mkdir xschem
 $ cd xschem
-$ cp /usr/local/share/pdk/sky130A/libs.tech/xschem/xschemrc
+$ cp /usr/local/share/pdk/sky130A/libs.tech/xschem/xschemrc .
 $ cp /usr/local/share/pdk/sky130A/libs.tech/ngspice/spinit .spiceinit
 $ cd ../mag
-$ cp /usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc .magiccrc
+$ cp /usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc .magicrc
 $ cd ../netgen
 $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen//sky130A_setup.tcl .
 ```
@@ -546,7 +546,41 @@ For the diode subckt when pins A and C are swapped both at the port name and low
 ![ex4_2](Resources/Lab4/ex4_2.png)
 
 ### excercise_5
-WIP
+Extract the Schematic netlist in xschem
+
+> Note: 1.change the extraction directory for the spice netlists
+        2.make sure the  simulation top lvl is a subckt is selected
+        3.recopy the xcshemrc and .spiceinit files
+
+![ex5_1](Resources/Lab4/ex5_1.png)
+
+Extract the netlist from magic
+
+> Note: 1.copy the magicrc file
+        2.run using magic -d XR
+
+![ex5_2](Resources/Lab4/ex5_2.png)
+
+On comparing the netlists using netgen we can see that the issue is with the defination of standard cells, as they are missing in the netlist they are treated as blackbox cells.
+![ex5_3](Resources/Lab4/ex5_3.png)
+
+Extract the xschem netlist for the analog wrapper test bench
+![ex5_4](Resources/Lab4/ex5_4.png)
+Compare this with the previously extracted layout netlist, and we see that since the subckts are defined only pin matching errors are shown
+![ex5_5](Resources/Lab4/ex5_5.png)
+
+By analysing the example_por we realise that the layout contains top_level_circuits -> Parameterized_devices -> low_level_device as a hirarchy whereas the schematic netlist is top level circuits -> low_level_device.
+
+Netgen automatically flattens these circuits to perform a comparision
+
+We also see that using netgen we can compare any cells in a netlist.
+
+Parameterized devices are extracted as individual devices strung together not as one parameterized devices. netgen flattens these automatically
+
+![ex5_6](Resources/Lab4/ex5_6.png)
+
+
+
 ### excercise_6
 WIP
 ### excercise_7
