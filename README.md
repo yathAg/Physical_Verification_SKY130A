@@ -586,11 +586,11 @@ Analysing the output for the wrapper again we can see the following errors in th
 Lets fic the i0_analog[4] error,
 In the .mag file for the circuit we can see the 2 nets are shorted, that can be fixed by adding a resistor (resmet3) on the layer and re exporting the netlists
 make a not of the resistor size.
-![ex5_9](Resources/Lab4/ex5_9.png)
+![ex5_10](Resources/Lab4/ex5_10.png)
 
 Now edit the schematic bt=y adding the resistor and giving the appropriate values.
 Make sure to export the tb netlist and not only the subckt.
-![ex5_10](Resources/Lab4/ex5_10.png)
+![ex5_9](Resources/Lab4/ex5_9.png)
 
 On comparing the netlists again we can see a the mismatch error is resolved
 ![ex5_11](Resources/Lab4/ex5_11.png)
