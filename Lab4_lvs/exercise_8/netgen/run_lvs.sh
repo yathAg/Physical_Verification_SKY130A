@@ -19,6 +19,7 @@
 # top-level xschem subcircuit from the wrapper testbench.
 #
 #--------------------------------------------------------------------------------
-netgen -batch lvs "../mag/digital_pll.spice digital_pll" "../verilog/digital_pll.v digital_pll" /usr/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl exercise_8_comp.out -json | tee lvs.log
+export MAGIC_EXT_USE_GDS=1
+netgen -batch lvs "../mag/digital_pll.spice digital_pll" "../verilog/digital_pll.v digital_pll" /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl exercise_8_comp.out -json | tee lvs.log
 echo ""
 ../../count_lvs.py exercise_8_comp.json | tee -a lvs.log

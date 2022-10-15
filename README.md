@@ -621,6 +621,32 @@ Another issue arising in cells are when different power rails are in the layout 
 ![ex7_2](Resources/Lab4/ex7_2.png)
 The different power layers can be tied together in the verilog code to fix this error.
 ![ex7_3](Resources/Lab4/ex7_3.png)
+### excercise_8
+Generating the netlists and running netgen we first get a similar issue to ex6 and can be fixed by adding the following line to the run_lvs.sh script
+```
+export MAGIC_EXT_USE_GDS=1
+```
+![ex8_1](Resources/Lab4/ex8_1.png)
+Next we have a diode mismatch error and we can see that the diode is missing in the verilog file. The possible reason for this is that the diode was generated in an antennacheck.
+![ex8_3](Resources/Lab4/ex8_3.png)
+We can locate the diode in the layout using its instance name from the netgen output.
+```
+% select cell sky130_fd_sc_hd__diode_2_0
+```
+![ex8_2](Resources/Lab4/ex8_2.png)
+We can check which node the diode is connected to  
+```
+% getnode
+```
+> note : by pressing 's' three times we can select the net in the entire layout
+
+![ex8_4](Resources/Lab4/ex8_4.png)
+
+The verilog file can be edited to add the diode circuit
+![ex8_5](Resources/Lab4/ex8_5.png)
+Rerunning netgen shows that the diode is available in the verilog netlist
+![ex8_6](Resources/Lab4/ex8_8.png)
+
 
 ### excercise_9
 Elements like resistors,capcitors can have property mismatches like width , lenght etc.

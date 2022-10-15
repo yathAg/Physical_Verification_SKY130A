@@ -132,6 +132,12 @@ module digital_pll (dco,
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
+ sky130_fd_sc_hd__diode_2 _0_ (
+   .DIODE(dco),
+   .VGND(VGND),
+   .VNB(VGND),
+   .VPB(VPWR),
+   .VPWR(VPWR));
  sky130_fd_sc_hd__nor2_2 _182_ (.A(dco),
     .B(\ringosc.iss.reset ),
     .Y(_050_),
