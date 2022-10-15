@@ -21,6 +21,6 @@
 # includes used by the testbench simulation are picked up.  Otherwise, the LVS
 # itself compares just the simple_por subcircuit from the testbench.
 #--------------------------------------------------------------------------------
-netgen -batch lvs "../mag/example_por.spice example_por" "../xschem/example_por_tb.spice example_por" /usr/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl exercise_9_comp.out -json | tee lvs.log
+netgen -batch lvs "../mag/example_por.spice example_por" "../xschem/example_por_tb.spice example_por" /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl exercise_9_comp.out -json | tee lvs.log
 echo ""
 ../../count_lvs.py exercise_9_comp.json | tee -a lvs.log

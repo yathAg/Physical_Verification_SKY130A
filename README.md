@@ -612,7 +612,13 @@ WIP
 ### excercise_8
 WIP
 ### excercise_9
-WIP
+Elements like resistors,capcitors can have property mismatches like width , lenght etc.
+These can be corrected in the schematic or layout.
+
+Example of property errors.
+![ex9_1](Resources/Lab4/ex9_1.png)
+Errors corrected
+![ex9_2](Resources/Lab4/ex9_2.png)
 
 ## Additional Content - OpenLANE Design Flow
 

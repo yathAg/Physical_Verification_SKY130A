@@ -1,4 +1,5 @@
-v {xschem version=2.9.9 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -114,8 +115,8 @@ N 2630 50 2690 50 { lab=vss}
 N 2300 -100 2300 -40 { lab=#net3}
 N 2500 -100 2500 -30 { lab=#net2}
 N 2500 -30 2500 20 { lab=#net2}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 2690 -40 0 0 {name=C1 model=cap_mim_m3_1 W=30 L=30 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_2.sym} 2820 -40 2 1 {name=C2 model=cap_mim_m3_2 W=30 L=30 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 2690 -40 0 0 {name=C1 model=cap_mim_m3_1 W=30 L=28 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 2820 -40 2 1 {name=C2 model=cap_mim_m3_2 W=30 L=28 MF=1 spiceprefix=X}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 2280 -240 0 0 {name=M1
 L=0.8
 W=2
@@ -145,7 +146,7 @@ model=nfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/res_xhigh_po_0p69.sym} 1930 -190 0 0 {name=R1
-L=500
+L=460
 model=res_xhigh_po_0p69
 spiceprefix=X
 mult=1}
@@ -178,7 +179,7 @@ model=nfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/res_xhigh_po_0p69.sym} 1930 30 0 0 {name=R2
-L=150
+L=138
 model=res_xhigh_po_0p69
 spiceprefix=X
 mult=1}
@@ -281,7 +282,7 @@ model=pfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/res_xhigh_po_0p69.sym} 1810 30 0 1 {name=R3
-L=25
+L=23
 model=res_xhigh_po_0p69
 spiceprefix=X
 mult=2}
