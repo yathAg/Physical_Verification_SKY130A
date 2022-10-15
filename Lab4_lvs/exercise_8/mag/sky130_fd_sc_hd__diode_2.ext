@@ -29,10 +29,10 @@ node "VPWR" 70 136.292 29 527 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "DIODE" 38 191.185 121 85 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 66300 1184 0 0 0 0 0 0 0 0 0 0 0 0
 node "VPB" 1173 250.38 29 527 nw 0 0 0 0 83460 1162 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VNB" 0 0 29 -17 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "DIODE" "VGND" 72.2976
+cap "DIODE" "VPB" 37.3663
 cap "VPWR" "VPB" 19.43
 cap "VPB" "VGND" 5.89481
-cap "VPWR" "VGND" 20.1544
-cap "VPB" "DIODE" 37.3663
 cap "VPWR" "DIODE" 71.3271
+cap "DIODE" "VGND" 72.2976
+cap "VPWR" "VGND" 20.1544
 device ndiode sky130_fd_pr__diode_pw2nd_05v5 31 39 32 40 a=17388 p=528 "VNB" "DIODE" 544 0 "VNB" 200 0

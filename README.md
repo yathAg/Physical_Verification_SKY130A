@@ -645,7 +645,17 @@ We can check which node the diode is connected to
 The verilog file can be edited to add the diode circuit
 ![ex8_5](Resources/Lab4/ex8_5.png)
 Rerunning netgen shows that the diode is available in the verilog netlist
-![ex8_6](Resources/Lab4/ex8_8.png)
+![ex8_6](Resources/Lab4/ex8_6.png)
+Moving on to the nect error we see there is a huge nimber of unconnected devices to the VPWR rail especially in the cell instance_249_
+![ex8_7](Resources/Lab4/ex8_7.png)
+finding this in the layout we see it is missing via3 connections to VPWR
+![ex8_8](Resources/Lab4/ex8_8.png)
+This can be resolved by painting in the via3
+![ex8_9](Resources/Lab4/ex8_9.png)
+This fixes all the mismatch issues and now we can move on to the final issue.
+Seeing the digital_pll circuit it looks like there is a broken net on instance_364_
+![ex8_10](Resources/Lab4/ex8_10.png)
+
 
 
 ### excercise_9

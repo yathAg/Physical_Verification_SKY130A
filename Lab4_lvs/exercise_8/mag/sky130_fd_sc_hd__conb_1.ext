@@ -25,15 +25,15 @@ node "a_21_232#" 514 0 21 232 rmp 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "VPWR" 255 339.808 29 527 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27072 756 0 0 18954 910 26496 744 0 0 0 0 0 0 0 0 0 0
 node "VPB" 1042 338.976 29 527 nw 0 0 0 0 112992 1346 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VNB" 0 0 29 -17 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "VPB" "VGND" 17.1594
-cap "VPWR" "VGND" 40.5307
-cap "HI" "VGND" 130.595
-cap "LO" "VPB" 12.0891
-cap "LO" "VPWR" 208.478
-cap "LO" "HI" 68.0718
-cap "VPB" "VPWR" 35.8887
-cap "LO" "VGND" 56.7758
-cap "VPB" "HI" 10.6437
-cap "VPWR" "HI" 67.4948
+cap "HI" "VPWR" 67.4948
+cap "VGND" "HI" 130.595
+cap "VGND" "VPWR" 40.5307
+cap "VPB" "LO" 12.0891
+cap "HI" "VPB" 10.6437
+cap "HI" "LO" 68.0718
+cap "VPWR" "VPB" 35.8887
+cap "VPWR" "LO" 208.478
+cap "VGND" "VPB" 17.1594
+cap "VGND" "LO" 56.7758
 device devres sky130_fd_pr__res_generic_po 159 232 160 233 9 96 "a_159_232#" 0 0 "VGND" 96 0 "LO" 96 0
 device devres sky130_fd_pr__res_generic_po 21 232 22 233 9 96 "a_21_232#" 0 0 "HI" 96 0 "VPWR" 96 0

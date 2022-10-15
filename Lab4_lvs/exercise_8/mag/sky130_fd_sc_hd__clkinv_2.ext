@@ -25,16 +25,16 @@ node "Y" 2381 133.204 305 153 li 0 0 0 0 0 0 0 0 4704 280 21800 1018 0 0 0 0 0 0
 node "A" 2098 394.814 213 221 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49122 2944 0 0 10980 578 0 0 0 0 0 0 0 0 0 0 0 0
 node "VPB" 1314 427.572 29 527 nw 0 0 0 0 142524 1530 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VNB" 0 0 29 -17 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "VPB" "A" 41.7393
 cap "Y" "VGND" 117.031
-cap "A" "Y" 149.6
-cap "VGND" "VPB" 11.1906
-cap "Y" "VPWR" 255.929
-cap "A" "VPB" 41.7393
-cap "VPWR" "VPB" 40.5207
-cap "A" "VGND" 51.532
+cap "VPWR" "Y" 255.929
+cap "VPB" "VGND" 11.1906
+cap "VPB" "VPWR" 40.5207
+cap "VGND" "A" 51.532
+cap "VPWR" "A" 20.3126
+cap "VPB" "Y" 12.8979
 cap "VPWR" "VGND" 44.9963
-cap "Y" "VPB" 12.8979
-cap "A" "VPWR" 20.3126
+cap "Y" "A" 149.6
 device msubckt sky130_fd_pr__nfet_01v8 259 47 260 48 l=30 w=84 "VNB" "A" 60 0 "Y" 84 0 "VGND" 84 0
 device msubckt sky130_fd_pr__nfet_01v8 173 47 174 48 l=30 w=84 "VNB" "A" 60 0 "VGND" 84 0 "Y" 84 0
 device msubckt sky130_fd_pr__pfet_01v8_hvt 256 297 257 298 l=30 w=200 "VPB" "A" 60 0 "Y" 200 0 "VPWR" 200 0
