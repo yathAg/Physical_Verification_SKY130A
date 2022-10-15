@@ -158,7 +158,7 @@ The netlist of the layout can be extracted using
 ext files are intermidiate files and can be cleaned using
 ```
 rm *.ext
-/usr/local/share/pdk/bin/cleanup_unref.py -remove
+/usr/local/share/pdk/scripts/cleanup_unref.py -remove
 ```
 The schematic netlist and layout netlist can be compared using LVS by netgen
 ```
@@ -621,8 +621,7 @@ Another issue arising in cells are when different power rails are in the layout 
 ![ex7_2](Resources/Lab4/ex7_2.png)
 The different power layers can be tied together in the verilog code to fix this error.
 ![ex7_3](Resources/Lab4/ex7_3.png)
-### excercise_8
-WIP
+
 ### excercise_9
 Elements like resistors,capcitors can have property mismatches like width , lenght etc.
 These can be corrected in the schematic or layout.
