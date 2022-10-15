@@ -422,6 +422,35 @@ getcell excercise_11_fill_pattern child 0 0
 
 ## Chapter 4 - LVS
 
+### excercise_1
+
+Netgen will compare 2 netlists even if the cells are not contained in subckts.
+netgen can be launched with a gui using
+```
+$ netgen
+```
+and then the 2 spice files can be compared using
+```
+% lvs netA.spice netB.spice
+```
+![ex1_1](Resources/Lab4/ex1_1.png)
+
+The actual information can be better analyised in the comp.out file. By editing a netlist to mismatch and analysing it we see
+![ex1_2](Resources/Lab4/ex1_2.png)
+
+netgen does not compare net names, but matches them as closely as possible putting them in the same partition.
+Here the format cell2/1 = 1 => pin 1 on cell 2 appears once
+![ex1_3](Resources/Lab4/ex1_3.png)
+
+In the device mismatch the Instance: cell3:3  1 = 3 reprasents pin 1 of the cell3 instance has a fanout of 3
+
+![ex1_4](Resources/Lab4/ex1_4.png)
+
+*Note: It is usually easier to debug from the netmismatch than the device mismatch*
+
+### excercise_2
+
+
 ## Additional Content - OpenLANE Design Flow
 
 OpenLANE is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, Fault, OpenPhySyn, CVC, SPEF-Extractor and custom methodology scripts for design exploration and optimization. The flow performs full ASIC implementation steps from RTL all the way down to GDSII.

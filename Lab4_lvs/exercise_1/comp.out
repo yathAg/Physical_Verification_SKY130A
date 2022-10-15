@@ -1,0 +1,73 @@
+
+Circuit 1 cell cell1 and Circuit 2 cell cell1 are black boxes.
+Equate elements:  no current cell.
+Device classes cell1 and cell1 are equivalent.
+
+Circuit 1 cell cell2 and Circuit 2 cell cell2 are black boxes.
+Equate elements:  no current cell.
+Device classes cell2 and cell2 are equivalent.
+
+Circuit 1 cell cell3 and Circuit 2 cell cell3 are black boxes.
+Equate elements:  no current cell.
+Device classes cell3 and cell3 are equivalent.
+
+Subcircuit summary:
+Circuit 1: netA.spice                      |Circuit 2: netB.spice                      
+-------------------------------------------|-------------------------------------------
+cell1 (1)                                  |cell1 (1)                                  
+cell2 (1)                                  |cell2 (1)                                  
+cell3 (1)                                  |cell3 (1)                                  
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 3                          |Number of nets: 3                          
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: netA.spice                      |Circuit 2: netB.spice                      
+
+---------------------------------------------------------------------------------------
+Net: C                                     |Net: B                                     
+  cell1/3 = 1                              |  cell1/2 = 1                              
+  cell3/2 = 1                              |  cell2/2 = 1                              
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: B                                     |Net: C                                     
+  cell1/2 = 1                              |  cell1/3 = 1                              
+  cell2/2 = 1                              |  cell3/2 = 1                              
+  cell3/1 = 1                              |  cell3/1 = 1                              
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: A                                     |Net: A                                     
+  cell1/1 = 1                              |  cell1/1 = 1                              
+  cell2/1 = 1                              |  cell2/1 = 1                              
+  cell2/3 = 1                              |  cell2/3 = 1                              
+  cell3/3 = 1                              |  cell3/3 = 1                              
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: netA.spice                      |Circuit 2: netB.spice                      
+
+---------------------------------------------------------------------------------------
+Instance: cell3:3                          |Instance: cell3:3                          
+  1 = 3                                    |  1 = 3                                    
+  2 = 2                                    |  2 = 3                                    
+  3 = 4                                    |  3 = 4                                    
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: cell2:2                          |Instance: cell2:2                          
+  1 = 4                                    |  1 = 4                                    
+  2 = 3                                    |  2 = 2                                    
+  3 = 4                                    |  3 = 4                                    
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: cell1:1                          |Instance: cell1:1                          
+  1 = 4                                    |  1 = 4                                    
+  2 = 3                                    |  2 = 2                                    
+  3 = 2                                    |  3 = 3                                    
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Cells have no pins;  pin matching not needed.
+Device classes netA.spice and netB.spice are equivalent.
+
+Final result: Netlists do not match.
