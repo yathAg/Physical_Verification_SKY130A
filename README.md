@@ -595,7 +595,18 @@ Make sure to export the tb netlist and not only the subckt.
 On comparing the netlists again we can see a the mismatch error is resolved
 ![ex5_11](Resources/Lab4/ex5_11.png)
 ### excercise_6
-WIP
+The design contains a fill cells that are avoided by Magic during extraction as they do not really contain anything inside them but are accurately placed by the router.
+![ex6_1](Resources/Lab4/ex6_1.png)
+So we ignore comparing these cells in netgen by changing the corresponding environment variable.
+![ex6_2](Resources/Lab4/ex6_2.png)
+
+We can do this in the run_lvs file by adding
+```
+export MAGIC_EXT_USE_GDS=1
+```
+on rerunning netgen we get no errors.
+![ex6_3](Resources/Lab4/ex6_3.png)
+
 ### excercise_7
 WIP
 ### excercise_8

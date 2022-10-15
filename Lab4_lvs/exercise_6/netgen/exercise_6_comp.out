@@ -1,0 +1,1073 @@
+
+Circuit 2 cell sky130_fd_sc_hd__decap_4 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_4        |Circuit 2: sky130_fd_sc_hd__decap_4        
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_4 and sky130_fd_sc_hd__decap_4 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__or3_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__or3_2 (0):  Merged 2 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__or3_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__or3_2          |Circuit 2: sky130_fd_sc_hd__or3_2          
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+C                                          |C                                          
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__or3_2 and sky130_fd_sc_hd__or3_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__decap_3 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_3        |Circuit 2: sky130_fd_sc_hd__decap_3        
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_3 and sky130_fd_sc_hd__decap_3 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__dfrtp_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__dfrtp_2 (0):  Merged 2 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__dfrtp_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__dfrtp_2        |Circuit 2: sky130_fd_sc_hd__dfrtp_2        
+-------------------------------------------|-------------------------------------------
+CLK                                        |CLK                                        
+D                                          |D                                          
+RESET_B                                    |RESET_B                                    
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+Q                                          |Q                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__dfrtp_2 and sky130_fd_sc_hd__dfrtp_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__clkinv_1 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__clkinv_1 (0):  Merged 1 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__clkinv_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__clkinv_1       |Circuit 2: sky130_fd_sc_hd__clkinv_1       
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+Y                                          |Y                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__clkinv_1 and sky130_fd_sc_hd__clkinv_1 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__mux2_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sky130_fd_sc_hd__mux2_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__mux2_1         |Circuit 2: sky130_fd_sc_hd__mux2_1         
+-------------------------------------------|-------------------------------------------
+A0                                         |A0                                         
+A1                                         |A1                                         
+S                                          |S                                          
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__mux2_1 and sky130_fd_sc_hd__mux2_1 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__a311o_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__a311o_2 (0):  Merged 2 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__a311o_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__a311o_2        |Circuit 2: sky130_fd_sc_hd__a311o_2        
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+B1                                         |B1                                         
+C1                                         |C1                                         
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__a311o_2 and sky130_fd_sc_hd__a311o_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__a2bb2o_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__a2bb2o_2 (0):  Merged 2 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__a2bb2o_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__a2bb2o_2       |Circuit 2: sky130_fd_sc_hd__a2bb2o_2       
+-------------------------------------------|-------------------------------------------
+A1_N                                       |A1_N                                       
+A2_N                                       |A2_N                                       
+B1                                         |B1                                         
+B2                                         |B2                                         
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__a2bb2o_2 and sky130_fd_sc_hd__a2bb2o_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__einvp_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__einvp_2 (0):  Merged 4 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__einvp_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__einvp_2        |Circuit 2: sky130_fd_sc_hd__einvp_2        
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+TE                                         |TE                                         
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+Z                                          |Z                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__einvp_2 and sky130_fd_sc_hd__einvp_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__einvn_8 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__einvn_8 (0):  Merged 28 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__einvn_8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__einvn_8        |Circuit 2: sky130_fd_sc_hd__einvn_8        
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+TE_B                                       |TE_B                                       
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+Z                                          |Z                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__einvn_8 and sky130_fd_sc_hd__einvn_8 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__o311a_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__o311a_2 (0):  Merged 2 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__o311a_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__o311a_2        |Circuit 2: sky130_fd_sc_hd__o311a_2        
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+B1                                         |B1                                         
+C1                                         |C1                                         
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__o311a_2 and sky130_fd_sc_hd__o311a_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__or2_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__or2_2 (0):  Merged 2 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__or2_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__or2_2          |Circuit 2: sky130_fd_sc_hd__or2_2          
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__or2_2 and sky130_fd_sc_hd__or2_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__buf_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__buf_2 (0):  Merged 2 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__buf_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__buf_2          |Circuit 2: sky130_fd_sc_hd__buf_2          
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__buf_2 and sky130_fd_sc_hd__buf_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__einvn_4 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__einvn_4 (0):  Merged 12 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__einvn_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__einvn_4        |Circuit 2: sky130_fd_sc_hd__einvn_4        
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+TE_B                                       |TE_B                                       
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+Z                                          |Z                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__einvn_4 and sky130_fd_sc_hd__einvn_4 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__nand2_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__nand2_2 (0):  Merged 4 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__nand2_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__nand2_2        |Circuit 2: sky130_fd_sc_hd__nand2_2        
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+Y                                          |Y                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__nand2_2 and sky130_fd_sc_hd__nand2_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__o221a_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__o221a_2 (0):  Merged 2 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__o221a_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__o221a_2        |Circuit 2: sky130_fd_sc_hd__o221a_2        
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+B1                                         |B1                                         
+B2                                         |B2                                         
+C1                                         |C1                                         
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__o221a_2 and sky130_fd_sc_hd__o221a_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__buf_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sky130_fd_sc_hd__buf_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__buf_1          |Circuit 2: sky130_fd_sc_hd__buf_1          
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__buf_1 and sky130_fd_sc_hd__buf_1 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__decap_6 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_6 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_6        |Circuit 2: sky130_fd_sc_hd__decap_6        
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_6 and sky130_fd_sc_hd__decap_6 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__clkbuf_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__clkbuf_2 (0):  Merged 2 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__clkbuf_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__clkbuf_2       |Circuit 2: sky130_fd_sc_hd__clkbuf_2       
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__clkbuf_2 and sky130_fd_sc_hd__clkbuf_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__a31o_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__a31o_2 (0):  Merged 2 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__a31o_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__a31o_2         |Circuit 2: sky130_fd_sc_hd__a31o_2         
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+B1                                         |B1                                         
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__a31o_2 and sky130_fd_sc_hd__a31o_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__a32o_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__a32o_2 (0):  Merged 2 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__a32o_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__a32o_2         |Circuit 2: sky130_fd_sc_hd__a32o_2         
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+B1                                         |B1                                         
+B2                                         |B2                                         
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__a32o_2 and sky130_fd_sc_hd__a32o_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__a22o_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__a22o_2 (0):  Merged 2 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__a22o_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__a22o_2         |Circuit 2: sky130_fd_sc_hd__a22o_2         
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+B1                                         |B1                                         
+B2                                         |B2                                         
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__a22o_2 and sky130_fd_sc_hd__a22o_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__clkbuf_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sky130_fd_sc_hd__clkbuf_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__clkbuf_1       |Circuit 2: sky130_fd_sc_hd__clkbuf_1       
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__clkbuf_1 and sky130_fd_sc_hd__clkbuf_1 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__o21ai_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__o21ai_2 (0):  Merged 6 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__o21ai_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__o21ai_2        |Circuit 2: sky130_fd_sc_hd__o21ai_2        
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+B1                                         |B1                                         
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+Y                                          |Y                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__o21ai_2 and sky130_fd_sc_hd__o21ai_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__nor2_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__nor2_2 (0):  Merged 4 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__nor2_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__nor2_2         |Circuit 2: sky130_fd_sc_hd__nor2_2         
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+Y                                          |Y                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__nor2_2 and sky130_fd_sc_hd__nor2_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__and4_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__and4_2 (0):  Merged 2 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__and4_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__and4_2         |Circuit 2: sky130_fd_sc_hd__and4_2         
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+C                                          |C                                          
+D                                          |D                                          
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__and4_2 and sky130_fd_sc_hd__and4_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__inv_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__inv_2 (0):  Merged 2 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__inv_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__inv_2          |Circuit 2: sky130_fd_sc_hd__inv_2          
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+Y                                          |Y                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__inv_2 and sky130_fd_sc_hd__inv_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__o22a_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__o22a_2 (0):  Merged 2 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__o22a_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__o22a_2         |Circuit 2: sky130_fd_sc_hd__o22a_2         
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+B1                                         |B1                                         
+B2                                         |B2                                         
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__o22a_2 and sky130_fd_sc_hd__o22a_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__a221o_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__a221o_2 (0):  Merged 2 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__a221o_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__a221o_2        |Circuit 2: sky130_fd_sc_hd__a221o_2        
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+B1                                         |B1                                         
+B2                                         |B2                                         
+C1                                         |C1                                         
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__a221o_2 and sky130_fd_sc_hd__a221o_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__decap_12 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_12 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_12       |Circuit 2: sky130_fd_sc_hd__decap_12       
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_12 and sky130_fd_sc_hd__decap_12 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__a21oi_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__a21oi_2 (0):  Merged 4 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__a21oi_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__a21oi_2        |Circuit 2: sky130_fd_sc_hd__a21oi_2        
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+B1                                         |B1                                         
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+Y                                          |Y                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__a21oi_2 and sky130_fd_sc_hd__a21oi_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__decap_8 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_8        |Circuit 2: sky130_fd_sc_hd__decap_8        
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_8 and sky130_fd_sc_hd__decap_8 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__o31a_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__o31a_2 (0):  Merged 2 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__o31a_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__o31a_2         |Circuit 2: sky130_fd_sc_hd__o31a_2         
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+B1                                         |B1                                         
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__o31a_2 and sky130_fd_sc_hd__o31a_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__o221ai_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__o221ai_2 (0):  Merged 10 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__o221ai_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__o221ai_2       |Circuit 2: sky130_fd_sc_hd__o221ai_2       
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+B1                                         |B1                                         
+B2                                         |B2                                         
+C1                                         |C1                                         
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+Y                                          |Y                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__o221ai_2 and sky130_fd_sc_hd__o221ai_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__einvp_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sky130_fd_sc_hd__einvp_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__einvp_1        |Circuit 2: sky130_fd_sc_hd__einvp_1        
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+TE                                         |TE                                         
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+Z                                          |Z                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__einvp_1 and sky130_fd_sc_hd__einvp_1 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__and3_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__and3_2 (0):  Merged 2 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__and3_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__and3_2         |Circuit 2: sky130_fd_sc_hd__and3_2         
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+C                                          |C                                          
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__and3_2 and sky130_fd_sc_hd__and3_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__a21bo_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__a21bo_2 (0):  Merged 2 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__a21bo_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__a21bo_2        |Circuit 2: sky130_fd_sc_hd__a21bo_2        
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+B1_N                                       |B1_N                                       
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__a21bo_2 and sky130_fd_sc_hd__a21bo_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__o41a_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__o41a_2 (0):  Merged 2 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__o41a_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__o41a_2         |Circuit 2: sky130_fd_sc_hd__o41a_2         
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+A4                                         |A4                                         
+B1                                         |B1                                         
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__o41a_2 and sky130_fd_sc_hd__o41a_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__o2bb2a_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__o2bb2a_2 (0):  Merged 2 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__o2bb2a_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__o2bb2a_2       |Circuit 2: sky130_fd_sc_hd__o2bb2a_2       
+-------------------------------------------|-------------------------------------------
+A1_N                                       |A1_N                                       
+A2_N                                       |A2_N                                       
+B1                                         |B1                                         
+B2                                         |B2                                         
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__o2bb2a_2 and sky130_fd_sc_hd__o2bb2a_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__o21a_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__o21a_2 (0):  Merged 2 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__o21a_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__o21a_2         |Circuit 2: sky130_fd_sc_hd__o21a_2         
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+B1                                         |B1                                         
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__o21a_2 and sky130_fd_sc_hd__o21a_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__o22ai_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__o22ai_2 (0):  Merged 8 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__o22ai_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__o22ai_2        |Circuit 2: sky130_fd_sc_hd__o22ai_2        
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+B1                                         |B1                                         
+B2                                         |B2                                         
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+Y                                          |Y                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__o22ai_2 and sky130_fd_sc_hd__o22ai_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__clkinv_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__clkinv_2 (0):  Merged 3 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__clkinv_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__clkinv_2       |Circuit 2: sky130_fd_sc_hd__clkinv_2       
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+Y                                          |Y                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__clkinv_2 and sky130_fd_sc_hd__clkinv_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__o32a_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__o32a_2 (0):  Merged 2 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__o32a_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__o32a_2         |Circuit 2: sky130_fd_sc_hd__o32a_2         
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+B1                                         |B1                                         
+B2                                         |B2                                         
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__o32a_2 and sky130_fd_sc_hd__o32a_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__clkinv_8 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__clkinv_8 (0):  Merged 18 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__clkinv_8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__clkinv_8       |Circuit 2: sky130_fd_sc_hd__clkinv_8       
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+Y                                          |Y                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__clkinv_8 and sky130_fd_sc_hd__clkinv_8 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__o211a_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__o211a_2 (0):  Merged 2 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__o211a_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__o211a_2        |Circuit 2: sky130_fd_sc_hd__o211a_2        
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+B1                                         |B1                                         
+C1                                         |C1                                         
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__o211a_2 and sky130_fd_sc_hd__o211a_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__a21o_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__a21o_2 (0):  Merged 2 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__a21o_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__a21o_2         |Circuit 2: sky130_fd_sc_hd__a21o_2         
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+B1                                         |B1                                         
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__a21o_2 and sky130_fd_sc_hd__a21o_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__o2111ai_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__o2111ai_2 (0):  Merged 10 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__o2111ai_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__o2111ai_2      |Circuit 2: sky130_fd_sc_hd__o2111ai_2      
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+B1                                         |B1                                         
+C1                                         |C1                                         
+D1                                         |D1                                         
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+Y                                          |Y                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__o2111ai_2 and sky130_fd_sc_hd__o2111ai_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__conb_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sky130_fd_sc_hd__conb_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__conb_1         |Circuit 2: sky130_fd_sc_hd__conb_1         
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+HI                                         |HI                                         
+LO                                         |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__conb_1 and sky130_fd_sc_hd__conb_1 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__o2bb2ai_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__o2bb2ai_2 (0):  Merged 10 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__o2bb2ai_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__o2bb2ai_2      |Circuit 2: sky130_fd_sc_hd__o2bb2ai_2      
+-------------------------------------------|-------------------------------------------
+A1_N                                       |A1_N                                       
+A2_N                                       |A2_N                                       
+B1                                         |B1                                         
+B2                                         |B2                                         
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+Y                                          |Y                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__o2bb2ai_2 and sky130_fd_sc_hd__o2bb2ai_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__and2_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__and2_2 (0):  Merged 2 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__and2_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__and2_2         |Circuit 2: sky130_fd_sc_hd__and2_2         
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__and2_2 and sky130_fd_sc_hd__and2_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__or4_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__or4_2 (0):  Merged 2 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__or4_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__or4_2          |Circuit 2: sky130_fd_sc_hd__or4_2          
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+C                                          |C                                          
+D                                          |D                                          
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__or4_2 and sky130_fd_sc_hd__or4_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__a22oi_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__a22oi_2 (0):  Merged 8 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__a22oi_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__a22oi_2        |Circuit 2: sky130_fd_sc_hd__a22oi_2        
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+B1                                         |B1                                         
+B2                                         |B2                                         
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+Y                                          |Y                                          
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__a22oi_2 and sky130_fd_sc_hd__a22oi_2 are equivalent.
+
+Class digital_pll (0):  Merged 190 parallel devices.
+Class digital_pll (1):  Merged 190 parallel devices.
+Subcircuit summary:
+Circuit 1: digital_pll                     |Circuit 2: digital_pll                     
+-------------------------------------------|-------------------------------------------
+sky130_fd_sc_hd__decap_4 (69->1)           |sky130_fd_sc_hd__decap_4 (69->1)           
+sky130_fd_sc_hd__or3_2 (5)                 |sky130_fd_sc_hd__or3_2 (5)                 
+sky130_fd_sc_hd__decap_3 (97->1)           |sky130_fd_sc_hd__decap_3 (97->1)           
+sky130_fd_sc_hd__dfrtp_2 (23)              |sky130_fd_sc_hd__dfrtp_2 (23)              
+sky130_fd_sc_hd__clkinv_1 (13)             |sky130_fd_sc_hd__clkinv_1 (13)             
+sky130_fd_sc_hd__mux2_1 (28)               |sky130_fd_sc_hd__mux2_1 (28)               
+sky130_fd_sc_hd__a311o_2 (1)               |sky130_fd_sc_hd__a311o_2 (1)               
+sky130_fd_sc_hd__a2bb2o_2 (4)              |sky130_fd_sc_hd__a2bb2o_2 (4)              
+sky130_fd_sc_hd__einvp_2 (26)              |sky130_fd_sc_hd__einvp_2 (26)              
+sky130_fd_sc_hd__einvn_8 (13)              |sky130_fd_sc_hd__einvn_8 (13)              
+sky130_fd_sc_hd__o311a_2 (4)               |sky130_fd_sc_hd__o311a_2 (4)               
+sky130_fd_sc_hd__or2_2 (17)                |sky130_fd_sc_hd__or2_2 (17)                
+sky130_fd_sc_hd__buf_2 (1)                 |sky130_fd_sc_hd__buf_2 (1)                 
+sky130_fd_sc_hd__einvn_4 (13)              |sky130_fd_sc_hd__einvn_4 (13)              
+sky130_fd_sc_hd__nand2_2 (7)               |sky130_fd_sc_hd__nand2_2 (7)               
+sky130_fd_sc_hd__o221a_2 (5)               |sky130_fd_sc_hd__o221a_2 (5)               
+sky130_fd_sc_hd__buf_1 (23)                |sky130_fd_sc_hd__buf_1 (23)                
+sky130_fd_sc_hd__decap_6 (17->1)           |sky130_fd_sc_hd__decap_6 (17->1)           
+sky130_fd_sc_hd__clkbuf_2 (12)             |sky130_fd_sc_hd__clkbuf_2 (12)             
+sky130_fd_sc_hd__a31o_2 (3)                |sky130_fd_sc_hd__a31o_2 (3)                
+sky130_fd_sc_hd__a32o_2 (2)                |sky130_fd_sc_hd__a32o_2 (2)                
+sky130_fd_sc_hd__a22o_2 (12)               |sky130_fd_sc_hd__a22o_2 (12)               
+sky130_fd_sc_hd__clkbuf_1 (13)             |sky130_fd_sc_hd__clkbuf_1 (13)             
+sky130_fd_sc_hd__o21ai_2 (4)               |sky130_fd_sc_hd__o21ai_2 (4)               
+sky130_fd_sc_hd__nor2_2 (6)                |sky130_fd_sc_hd__nor2_2 (6)                
+sky130_fd_sc_hd__and4_2 (2)                |sky130_fd_sc_hd__and4_2 (2)                
+sky130_fd_sc_hd__inv_2 (29)                |sky130_fd_sc_hd__inv_2 (29)                
+sky130_fd_sc_hd__o22a_2 (4)                |sky130_fd_sc_hd__o22a_2 (4)                
+sky130_fd_sc_hd__a221o_2 (2)               |sky130_fd_sc_hd__a221o_2 (2)               
+sky130_fd_sc_hd__decap_12 (8->1)           |sky130_fd_sc_hd__decap_12 (8->1)           
+sky130_fd_sc_hd__a21oi_2 (4)               |sky130_fd_sc_hd__a21oi_2 (4)               
+sky130_fd_sc_hd__decap_8 (4->1)            |sky130_fd_sc_hd__decap_8 (4->1)            
+sky130_fd_sc_hd__o31a_2 (6)                |sky130_fd_sc_hd__o31a_2 (6)                
+sky130_fd_sc_hd__o221ai_2 (1)              |sky130_fd_sc_hd__o221ai_2 (1)              
+sky130_fd_sc_hd__einvp_1 (1)               |sky130_fd_sc_hd__einvp_1 (1)               
+sky130_fd_sc_hd__and3_2 (1)                |sky130_fd_sc_hd__and3_2 (1)                
+sky130_fd_sc_hd__a21bo_2 (1)               |sky130_fd_sc_hd__a21bo_2 (1)               
+sky130_fd_sc_hd__o41a_2 (5)                |sky130_fd_sc_hd__o41a_2 (5)                
+sky130_fd_sc_hd__o2bb2a_2 (4)              |sky130_fd_sc_hd__o2bb2a_2 (4)              
+sky130_fd_sc_hd__o21a_2 (1)                |sky130_fd_sc_hd__o21a_2 (1)                
+sky130_fd_sc_hd__o22ai_2 (1)               |sky130_fd_sc_hd__o22ai_2 (1)               
+sky130_fd_sc_hd__clkinv_2 (2)              |sky130_fd_sc_hd__clkinv_2 (2)              
+sky130_fd_sc_hd__o32a_2 (2)                |sky130_fd_sc_hd__o32a_2 (2)                
+sky130_fd_sc_hd__clkinv_8 (2)              |sky130_fd_sc_hd__clkinv_8 (2)              
+sky130_fd_sc_hd__o211a_2 (2)               |sky130_fd_sc_hd__o211a_2 (2)               
+sky130_fd_sc_hd__a21o_2 (1)                |sky130_fd_sc_hd__a21o_2 (1)                
+sky130_fd_sc_hd__o2111ai_2 (1)             |sky130_fd_sc_hd__o2111ai_2 (1)             
+sky130_fd_sc_hd__conb_1 (1)                |sky130_fd_sc_hd__conb_1 (1)                
+sky130_fd_sc_hd__o2bb2ai_2 (1)             |sky130_fd_sc_hd__o2bb2ai_2 (1)             
+sky130_fd_sc_hd__and2_2 (1)                |sky130_fd_sc_hd__and2_2 (1)                
+sky130_fd_sc_hd__or4_2 (1)                 |sky130_fd_sc_hd__or4_2 (1)                 
+sky130_fd_sc_hd__a22oi_2 (1)               |sky130_fd_sc_hd__a22oi_2 (1)               
+Number of devices: 317                     |Number of devices: 317                     
+Number of nets: 323                        |Number of nets: 323                        
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: digital_pll                     |Circuit 2: digital_pll                     
+-------------------------------------------|-------------------------------------------
+dco                                        |dco                                        
+enable                                     |enable                                     
+resetb                                     |resetb                                     
+clockp[0]                                  |clockp[0]                                  
+ext_trim[22]                               |ext_trim[22]                               
+ext_trim[3]                                |ext_trim[3]                                
+ext_trim[2]                                |ext_trim[2]                                
+ext_trim[15]                               |ext_trim[15]                               
+ext_trim[24]                               |ext_trim[24]                               
+ext_trim[0]                                |ext_trim[0]                                
+ext_trim[21]                               |ext_trim[21]                               
+ext_trim[19]                               |ext_trim[19]                               
+ext_trim[16]                               |ext_trim[16]                               
+ext_trim[11]                               |ext_trim[11]                               
+ext_trim[10]                               |ext_trim[10]                               
+ext_trim[23]                               |ext_trim[23]                               
+ext_trim[1]                                |ext_trim[1]                                
+ext_trim[9]                                |ext_trim[9]                                
+ext_trim[14]                               |ext_trim[14]                               
+ext_trim[8]                                |ext_trim[8]                                
+ext_trim[13]                               |ext_trim[13]                               
+ext_trim[12]                               |ext_trim[12]                               
+ext_trim[7]                                |ext_trim[7]                                
+ext_trim[25]                               |ext_trim[25]                               
+ext_trim[20]                               |ext_trim[20]                               
+ext_trim[6]                                |ext_trim[6]                                
+ext_trim[5]                                |ext_trim[5]                                
+ext_trim[18]                               |ext_trim[18]                               
+ext_trim[4]                                |ext_trim[4]                                
+ext_trim[17]                               |ext_trim[17]                               
+osc                                        |osc                                        
+clockp[1]                                  |clockp[1]                                  
+div[1]                                     |div[1]                                     
+div[0]                                     |div[0]                                     
+div[3]                                     |div[3]                                     
+div[2]                                     |div[2]                                     
+div[4]                                     |div[4]                                     
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes digital_pll and digital_pll are equivalent.
+
+Final result: Circuits match uniquely.
+.
