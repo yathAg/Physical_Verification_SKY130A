@@ -455,23 +455,23 @@ Unlike magic, Netgen has to be reinitialized between runs this can be done by
 reinitialize
 ```
 we can see despite having a subckt defination the devices are not checked
-![ex2_1](Resources/Lab4/ex2_1].png)
+![ex2_1](Resources/Lab4/ex2_1.png)
 A subckt defination is not an active component, it is only a device defination. Only subckt lines starting with x in a spice netlist are considered as active components. Both the spice netlists are considered as empty lists here by netgen
 
 It is better to compare the netlists at a subckt level rather than the top level. we can give the subckt name to netgen by:
 ```
 % lvs "netA.spice test" "netB.spice test"
 ```
-![ex2_2](Resources/Lab4/ex2_2].png)
+![ex2_2](Resources/Lab4/ex2_2.png)
 
 Netgen does note care about the order of the pin names, it cares wether all the pin names are the same
 
 By changing the pin name order in netA.spice and reruning lvs
-![ex2_3](Resources/Lab4/ex2_3].png)
+![ex2_3](Resources/Lab4/ex2_3.png)
 
 We see the circuits are matched, by swaping pin names at the top level inside the circuit and rechecking we get the mismatch error.
 
-![ex2_4](Resources/Lab4/ex2_4].png)
+![ex2_4](Resources/Lab4/ex2_4.png)
 
 this indicates that it is okay to have port order in an  netlist in f=differnt order, but since netgen cannot make any assumptions about the top level the pin names should match.
 
