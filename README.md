@@ -488,6 +488,47 @@ The json file gives a more machine readable file and can be viewed Using
 ../count_lvs.py | tee -a lvs.log
 ```
 
+subckts that are defined and are completely empty are considered as blackbox entries. Ie the defination is a stand in for the circuit with the correct pin names and order. We can see how these pin names are reflected in the comp.out file.
+![ex3_1](Resources/Lab4/ex3_1.png)
+
+By changing the pin name order of subckt cell1 we do get a mismatch and this shows that the cell names are meaningfull
+![ex3_2](Resources/Lab4/ex3_2.png)
+
+By changing the port names in cell1 from A B C to A B D and re running we get proxypins.
+Since these are blackbox circuits netgen assumes that port c is missing in circuitA and D is missing in circuitB
+
+Netgen assumes that the cell has all pin A B C D and adds the proxy pin to show the missing pin
+
+![ex3_3](Resources/Lab4/ex3_3.png)
+
+By changing the cell1 to cell 4 in both the defination and the instanciation.
+
+We see that cells match and the cells are being flattened. This highlights an issue with blackcells. It cannot recognise when it is a blackbox cell and when it is an empty circuit
+
+![ex3_4](Resources/Lab4/ex3_4.png)
+This can be solved by using the -blackbox flag which tells netgen to trat any empty cells as blackbox entries
+```
+$ netgen -batch lvs "netA.spice test" "netB.spice test" \
+  /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl \
+  exercise_3_comp.out -json -blackbox | tee lvs.log
+```
+We see how this results in a device count mismatch
+![ex3_5](Resources/Lab4/ex3_5.png)
+
+both the cells show up in the same partition
+This highlights how even though components in the comp.out file may be alligened but are a complete mismatch
+### excercise_4
+WIP
+### excercise_5
+WIP
+### excercise_6
+WIP
+### excercise_7
+WIP
+### excercise_8
+WIP
+### excercise_9
+WIP
 
 ## Additional Content - OpenLANE Design Flow
 

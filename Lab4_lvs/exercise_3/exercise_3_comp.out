@@ -1,16 +1,4 @@
 
-Circuit 1 cell cell1 and Circuit 2 cell cell1 are black boxes.
-
-Subcircuit pins:
-Circuit 1: cell1                           |Circuit 2: cell1                           
--------------------------------------------|-------------------------------------------
-A                                          |A                                          
-B                                          |B                                          
-C                                          |C                                          
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes cell1 and cell1 are equivalent.
-
 Circuit 1 cell cell2 and Circuit 2 cell cell2 are black boxes.
 
 Subcircuit pins:
@@ -38,13 +26,46 @@ Device classes cell3 and cell3 are equivalent.
 Subcircuit summary:
 Circuit 1: test                            |Circuit 2: test                            
 -------------------------------------------|-------------------------------------------
-cell1 (1)                                  |cell1 (1)                                  
+cell4 (1)                                  |(no matching element)                      
 cell2 (1)                                  |cell2 (1)                                  
 cell3 (1)                                  |cell3 (1)                                  
+(no matching element)                      |cell1 (1)                                  
 Number of devices: 3                       |Number of devices: 3                       
 Number of nets: 3                          |Number of nets: 3                          
 ---------------------------------------------------------------------------------------
-Netlists match uniquely.
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: test                            |Circuit 2: test                            
+
+---------------------------------------------------------------------------------------
+Net: C                                     |Net: C                                     
+  cell4/C = 1                              |  cell1/C = 1                              
+  cell3/A = 1                              |  cell3/A = 1                              
+  cell3/B = 1                              |  cell3/B = 1                              
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: B                                     |Net: B                                     
+  cell4/B = 1                              |  cell1/B = 1                              
+  cell2/B = 1                              |  cell2/B = 1                              
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: A                                     |Net: A                                     
+  cell4/A = 1                              |  cell1/A = 1                              
+  cell2/A = 1                              |  cell2/A = 1                              
+  cell2/C = 1                              |  cell2/C = 1                              
+  cell3/C = 1                              |  cell3/C = 1                              
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: test                            |Circuit 2: test                            
+
+---------------------------------------------------------------------------------------
+Instance: cell4:1                          |Instance: cell1:1                          
+  A = 4                                    |  A = 4                                    
+  B = 2                                    |  B = 2                                    
+  C = 3                                    |  C = 3                                    
+---------------------------------------------------------------------------------------
+Netlists do not match.
 
 Subcircuit pins:
 Circuit 1: test                            |Circuit 2: test                            
@@ -56,5 +77,4 @@ A                                          |A
 Cell pin lists are equivalent.
 Device classes test and test are equivalent.
 
-Final result: Circuits match uniquely.
-.
+Final result: Netlists do not match.
