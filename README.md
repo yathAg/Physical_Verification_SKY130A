@@ -450,6 +450,44 @@ In the device mismatch the Instance: cell3:3  1 = 3 reprasents pin 1 of the cell
 
 ### excercise_2
 
+Unlike magic, Netgen has to be reinitialized between runs this can be done by
+```
+reinitialize
+```
+we can see despite having a subckt defination the devices are not checked
+![ex2_1](Resources/Lab4/ex2_1].png)
+A subckt defination is not an active component, it is only a device defination. Only subckt lines starting with x in a spice netlist are considered as active components. Both the spice netlists are considered as empty lists here by netgen
+
+It is better to compare the netlists at a subckt level rather than the top level. we can give the subckt name to netgen by:
+```
+% lvs "netA.spice test" "netB.spice test"
+```
+![ex2_2](Resources/Lab4/ex2_2].png)
+
+Netgen does note care about the order of the pin names, it cares wether all the pin names are the same
+
+By changing the pin name order in netA.spice and reruning lvs
+![ex2_3](Resources/Lab4/ex2_3].png)
+
+We see the circuits are matched, by swaping pin names at the top level inside the circuit and rechecking we get the mismatch error.
+
+![ex2_4](Resources/Lab4/ex2_4].png)
+
+this indicates that it is okay to have port order in an  netlist in f=differnt order, but since netgen cannot make any assumptions about the top level the pin names should match.
+
+### excercise_3
+
+Instead of always running the gui a batch script can be made to run netgen in batch mode and output the files in a json file with a custom name
+```
+$ netgen -batch lvs "netA.spice test" "netB.spice test" \
+  /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl \
+  exercise_3_comp.out -json | tee lvs.log
+```
+The json file gives a more machine readable file and can be viewed Using
+```
+../count_lvs.py | tee -a lvs.log
+```
+
 
 ## Additional Content - OpenLANE Design Flow
 

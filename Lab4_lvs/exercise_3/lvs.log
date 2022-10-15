@@ -1,0 +1,38 @@
+Netgen 1.5.234 compiled on Monday 10 October 2022 11:55:12 PM IST
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Generating JSON file result
+Reading netlist file netA.spice
+Reading netlist file netB.spice
+Reading setup file /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl
+Comparison output logged to file exercise_3_comp.out
+Logging to file "exercise_3_comp.out" enabled
+Circuit cell1 contains no devices.
+Circuit cell2 contains no devices.
+Circuit cell3 contains no devices.
+
+Contents of circuit 1:  Circuit: 'test'
+Circuit test contains 3 device instances.
+  Class: cell1                 instances:   1
+  Class: cell2                 instances:   1
+  Class: cell3                 instances:   1
+Circuit contains 3 nets.
+Contents of circuit 2:  Circuit: 'test'
+Circuit test contains 3 device instances.
+  Class: cell1                 instances:   1
+  Class: cell2                 instances:   1
+  Class: cell3                 instances:   1
+Circuit contains 3 nets.
+
+Circuit 1 contains 3 devices, Circuit 2 contains 3 devices.
+Circuit 1 contains 3 nets,    Circuit 2 contains 3 nets.
+
+
+Final result: 
+Circuits match uniquely.
+.
+Logging to file "exercise_3_comp.out" disabled
+LVS Done.
+LVS reports no net, device, pin, or property mismatches.
+
+Total errors = 0

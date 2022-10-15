@@ -1,0 +1,65 @@
+
+Circuit 1 cell cell1 and Circuit 2 cell cell1 are black boxes.
+Warning: Equate pins:  cell cell1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell cell1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: cell1                           |Circuit 2: cell1                           
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes cell1 and cell1 are equivalent.
+
+Circuit 1 cell cell2 and Circuit 2 cell cell2 are black boxes.
+Warning: Equate pins:  cell cell2 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell cell2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: cell2                           |Circuit 2: cell2                           
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes cell2 and cell2 are equivalent.
+
+Circuit 1 cell cell3 and Circuit 2 cell cell3 are black boxes.
+Warning: Equate pins:  cell cell3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell cell3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: cell3                           |Circuit 2: cell3                           
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes cell3 and cell3 are equivalent.
+
+Subcircuit summary:
+Circuit 1: test                            |Circuit 2: test                            
+-------------------------------------------|-------------------------------------------
+cell1 (1)                                  |cell1 (1)                                  
+cell2 (1)                                  |cell2 (1)                                  
+cell3 (1)                                  |cell3 (1)                                  
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 3                          |Number of nets: 3                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: test                            |Circuit 2: test                            
+-------------------------------------------|-------------------------------------------
+A                                          |C **Mismatch**                             
+B                                          |B                                          
+C                                          |A **Mismatch**                             
+---------------------------------------------------------------------------------------
+Cell pin lists for test and test altered to match.
+Device classes test and test are equivalent.
+
+Final result: Top level cell failed pin matching.
