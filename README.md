@@ -654,7 +654,15 @@ This can be resolved by painting in the via3
 ![ex8_9](Resources/Lab4/ex8_9.png)
 This fixes all the mismatch issues and now we can move on to the final issue.
 Seeing the digital_pll circuit it looks like there is a broken net on instance_364_
-![ex8_10](Resources/Lab4/ex8_10.png)
+![ex8_10](Resources/Lab4/ex8_10.png)<br /><br />
+![ex8_11](Resources/Lab4/ex8_11.png)<br /><br />
+![ex8_12](Resources/Lab4/ex8_12.png)<br /><br />
+![ex8_13](Resources/Lab4/ex8_13.png)<br /><br />
+![ex8_14](Resources/Lab4/ex8_14.png)<br /><br />
+![ex8_15](Resources/Lab4/ex8_15.png)<br /><br />
+![ex8_16](Resources/Lab4/ex8_16.png)
+
+
 
 
 
