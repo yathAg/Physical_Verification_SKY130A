@@ -18,6 +18,7 @@ A special thanks to Tim, Kunal, and Sumanto for creating and helping out during 
 * [Chapter 3 - DRC Issues](#Chapter-3---DRC-Issues)
 * [Chapter 4 - LVS](#Chapter-4---LVS)
 * [Additional Content - OpenLANE Design Flow](#Additional-Content---OpenLANE-Design-Flow)
+* [Workshop Certificate](#Workshop-Certificate)
 
 ## Chapter 0 - Getting the tools
 
@@ -809,3 +810,8 @@ generate_final_summary_report
 - **Density Planning** : The utilization ratio can be reduced to form more spaced circuits with lesser errors The FP_CORE_UTIL variable in the .config file
 - **Dont use cells** : Avoid using cells that are known to cause errors
 - **Manual verification** : For designs with lower number of DRC errors, the can be corrected with the methods discussed in chapter 3
+
+
+### Workshop Certificate
+
+![Certificate](Resources/VSD_IAT_PV.png)
